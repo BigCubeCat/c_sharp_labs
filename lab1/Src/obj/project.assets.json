@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/interface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "interface/1.0.0": {
+      "type": "project",
+      "path": "../Interface/interface.csproj",
+      "msbuildProject": "../Interface/interface.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "interface >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/bigcubecat/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj",
+      "projectName": "Src",
+      "projectPath": "/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj",
+      "packagesPath": "/home/bigcubecat/.nuget/packages/",
+      "outputPath": "/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/bigcubecat/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/interface.csproj": {
+              "projectPath": "/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/interface.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/home/bigcubecat/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

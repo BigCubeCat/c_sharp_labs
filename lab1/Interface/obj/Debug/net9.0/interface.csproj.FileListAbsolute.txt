@@ -1,0 +1,12 @@
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/bin/Debug/net9.0/interface.deps.json
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/bin/Debug/net9.0/interface.dll
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/bin/Debug/net9.0/interface.pdb
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/obj/Debug/net9.0/interface.GeneratedMSBuildEditorConfig.editorconfig
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/obj/Debug/net9.0/interface.AssemblyInfoInputs.cache
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/obj/Debug/net9.0/interface.AssemblyInfo.cs
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/obj/Debug/net9.0/interface.csproj.CoreCompileInputs.cache
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/obj/Debug/net9.0/interface.sourcelink.json
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/obj/Debug/net9.0/interface.dll
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/obj/Debug/net9.0/refint/interface.dll
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/obj/Debug/net9.0/interface.pdb
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Interface/obj/Debug/net9.0/ref/interface.dll
