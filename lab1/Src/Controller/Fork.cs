@@ -11,7 +11,7 @@ namespace Src.Controller;
 /// <summary>
 /// Controller-mode implementation of fork with explicit locking semantics.
 /// </summary>
-public class Fork: IForkController
+public class Fork : IForkController
 {
     private bool _isTaken;
     private bool _isLocked;
@@ -32,7 +32,7 @@ public class Fork: IForkController
         return new Fork(number);
     }
 
-    
+
     /// <summary>
     ///     Create new fork instance.
     /// </summary>
@@ -147,7 +147,7 @@ public class Fork: IForkController
         return _isLocked && Locker == philosopher;
     }
 
-    
+
     /// <summary>
     ///     Advance internal counters by one simulation step.
     /// </summary>
@@ -157,7 +157,7 @@ public class Fork: IForkController
         else if (_isLocked) ++BlockTime;
         else ++AvailableTime;
     }
-    
+
     /// <summary>
     ///     Print fork statistics (usage percentages).
     /// </summary>
@@ -165,9 +165,9 @@ public class Fork: IForkController
     public void PrintScore(double simulationTime)
     {
         var builder = new StringBuilder();
-        builder.AppendFormat("Fork-{0}: used {1}%, block {2}%, available {3}%",
-            _number, UsedTime / simulationTime, BlockTime / simulationTime, AvailableTime / simulationTime);
+        builder.AppendFormat("Fork-{0}: used {1}, block {2}, available {3}",
+            _number, UsedTime / simulationTime, BlockTime / simulationTime,
+            AvailableTime / simulationTime);
         Console.WriteLine(builder.ToString());
     }
 }
-
