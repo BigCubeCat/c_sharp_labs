@@ -10,8 +10,8 @@ public class Fork : IForkStrategy
     private bool _isTaken;
     private readonly object _lockObject = new object();
     private readonly int _number;
-    private Stopwatch _stopwatch = new ();
-    
+    private Stopwatch _stopwatch = new();
+
     public IPhilosopher? Owner { get; private set; }
     public long UsedTime { get; private set; }
     public long AvailableTime { get; private set; }

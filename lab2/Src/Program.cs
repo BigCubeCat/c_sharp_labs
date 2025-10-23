@@ -1,251 +1,222 @@
-﻿global using Interface.Strategy;
+global using Interface.Strategy;
 
 using System;
 using System.Diagnostics;
 using System.Threading;
 using Interface;
+using Interface.Strategy;
 using Src;
 
-int simulationTime = 0;
-var stopwatch = new Stopwatch();
-CancellationTokenSource? cancellationTokenSource = null;
-
-try
+public class Simulation
 {
-    ParseArgs(out string pathToConf, out bool helpOnly, out int updateTime, out simulationTime);
+    private int _simulationTime;
+    private int _updateTime;
+    private string _pathToConf;
+    private readonly Stopwatch _stopwatch = new();
+    private CancellationTokenSource? _cancellationTokenSource;
 
-    if (helpOnly) return;
-
-    Loader.LoadPhilosophersFromFile<Src.Strategy.Philosopher, Src.Strategy.Fork>(pathToConf, new Random());
-    
-    cancellationTokenSource = new CancellationTokenSource();
-    var cancellationToken = cancellationTokenSource.Token;
-    
-    stopwatch.Start();
-    MainLoop(updateTime, simulationTime, cancellationToken);
-    stopwatch.Stop();
-}
-
-catch (ApplicationException e)
-{
-    Console.WriteLine(e.Message);
-}
-catch (OperationCanceledException)
-{
-    Console.WriteLine("Simulation was cancelled.");
-}
-catch (Exception e)
-{
-    Console.WriteLine(e.Message);
-    Console.Write(e.StackTrace);
-}
-finally
-{
-    cancellationTokenSource?.Cancel();
-    
-    // Даем время потокам завершиться
-    Thread.Sleep(100);
-    
-    PrintFinalStats(stopwatch.ElapsedMilliseconds);
-}
-
-void MainLoop(int updateTime, int simulationTime, CancellationToken cancellationToken)
-{
-    var philosophers = Loader.philosophers;
-    var forks = Loader.forks;
-
-    // Запускаем все потоки философов с передачей CancellationToken
-    foreach (var philosopher in philosophers)
+    public void Run()
     {
-        philosopher.Start(cancellationToken);
+        try
+        {
+            ParseArgs(out _pathToConf, out bool helpOnly, out _updateTime, out _simulationTime);
+            if (helpOnly) return;
+
+            Loader.LoadPhilosophersFromFile<Src.Strategy.Philosopher, Src.Strategy.Fork>(_pathToConf, new Random());
+
+            _cancellationTokenSource = new CancellationTokenSource();
+            var token = _cancellationTokenSource.Token;
+
+            _stopwatch.Start();
+            MainLoop(_updateTime, _simulationTime, token);
+            _stopwatch.Stop();
+        }
+        catch (ApplicationException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        catch (OperationCanceledException)
+        {
+            Console.WriteLine("Simulation was cancelled.");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            Console.Write(e.StackTrace);
+        }
+        finally
+        {
+            _cancellationTokenSource?.Cancel();
+            Thread.Sleep(100);
+            PrintFinalStats(_stopwatch.ElapsedMilliseconds);
+        }
     }
 
-    var stopwatch = Stopwatch.StartNew();
-    long lastUpdateTime = 0;
-    bool isDeadlock = false;
-
-    try
+    private void MainLoop(int updateTime, int simulationTime, CancellationToken token)
     {
-        while (stopwatch.ElapsedMilliseconds < simulationTime && !cancellationToken.IsCancellationRequested)
+        var philosophers = Loader.philosophers;
+        var forks = Loader.forks;
+
+        foreach (var philosopher in philosophers)
         {
-            long currentTime = stopwatch.ElapsedMilliseconds;
-            
-            // Обновляем состояние каждые updateTime мс
-            if (currentTime - lastUpdateTime >= updateTime)
+            philosopher.Start(token);
+        }
+
+        var loopWatch = Stopwatch.StartNew();
+        long lastUpdate = 0;
+        bool isDeadlock = false;
+
+        try
+        {
+            while (loopWatch.ElapsedMilliseconds < simulationTime && !token.IsCancellationRequested)
             {
-                if (DeadlockAnalyzer.IsDeadlock(philosophers, forks))
+                long current = loopWatch.ElapsedMilliseconds;
+
+                if (current - lastUpdate >= updateTime)
                 {
-                    isDeadlock = true;
+                    if (DeadlockAnalyzer.IsDeadlock(philosophers, forks))
+                        isDeadlock = true;
+
+                    Console.Clear();
+                    Console.WriteLine($"======== TIME: {current} ms ========");
+                    Console.WriteLine("Philosophers:");
+                    foreach (var philosopher in philosophers)
+                        philosopher.PrintInfo();
+
+                    Console.WriteLine("\nForks:");
+                    foreach (var fork in forks)
+                        fork.PrintInfo();
+
+                    lastUpdate = current;
+
+                    if (isDeadlock)
+                    {
+                        Console.WriteLine("\nDEADLOCK DETECTED");
+                        return;
+                    }
                 }
+                Thread.Sleep(updateTime);
+            }
+        }
+        catch (OperationCanceledException)
+        {
+            Console.WriteLine("Main loop cancelled.");
+        }
 
-                Console.Clear();
-                Console.WriteLine($"======== TIME: {currentTime} ms ========");
-                Console.WriteLine("Philosophers:");
+        foreach (var philosopher in philosophers)
+            philosopher.Stop();
 
-                foreach (var philosopher in philosophers)
-                {
-                    philosopher.PrintInfo();
-                }
+        Console.WriteLine("\nSimulation completed!");
+    }
 
-                Console.WriteLine("\nForks:");
+    private void PrintFinalStats(double totalTime)
+    {
+        var philosophers = Loader.philosophers;
+        var forks = Loader.forks;
 
-                foreach (var fork in forks)
-                {
-                    fork.PrintInfo();
-                }
+        int totalMeals = 0;
+        int totalHungryTime = 0;
+        double maxHungry = 0;
+        string mostHungry = "";
 
-                lastUpdateTime = currentTime;
+        Console.WriteLine("======== FINAL STATISTICS ========");
+        Console.WriteLine($"Total simulation time: {totalTime:F2} ms");
+        Console.WriteLine("\nPhilosophers:");
 
-                if (isDeadlock)
-                {
-                    Console.WriteLine("\nDEADLOCK DETECTED");
-                    return;
-                }
+        foreach (var philosopher in philosophers)
+        {
+            philosopher.PrintScore(totalTime);
+            totalMeals += philosopher.CountEatingFood;
+            totalHungryTime += philosopher.HungryTime;
+
+            if (philosopher.HungryTime > maxHungry)
+            {
+                maxHungry = philosopher.HungryTime;
+                mostHungry = philosopher.Name;
+            }
+        }
+
+        double throughput = totalTime > 0 ? totalMeals / totalTime : 0;
+        Console.WriteLine($"\nThroughput: {throughput:F4} meals/ms");
+
+        double avgWait = philosophers.Count > 0 ? (double)totalHungryTime / philosophers.Count : 0;
+        Console.WriteLine($"Average waiting time: {avgWait:F2} ms");
+        Console.WriteLine($"Max waiting time: {maxHungry:F2} ms ({mostHungry})");
+
+        Console.WriteLine("\nForks utilization:");
+        foreach (var fork in forks)
+            fork.PrintScore(totalTime);
+    }
+
+    private void ParseArgs(out string path, out bool helpOnly, out int updateTime, out int simulationTime)
+    {
+        path = "./philosophers.conf";
+        updateTime = 150;
+        simulationTime = 10000;
+        helpOnly = false;
+
+        bool wasConf = false, wasUpd = false, wasSim = false;
+        bool confFlag = false, updFlag = false, simFlag = false;
+
+        var args = Environment.GetCommandLineArgs();
+        foreach (var arg in args)
+        {
+            if (confFlag)
+            {
+                if (wasConf) throw new ArgumentException("Double set path");
+                path = arg; wasConf = true; confFlag = false;
+            }
+            else if (updFlag)
+            {
+                if (wasUpd) throw new ArgumentException("Double set update time");
+                if (!int.TryParse(arg, out updateTime))
+                    throw new ArgumentException("Update time should be int");
+                wasUpd = true; updFlag = false;
+            }
+            else if (simFlag)
+            {
+                if (wasSim) throw new ArgumentException("Double set simulation time");
+                if (!int.TryParse(arg, out simulationTime))
+                    throw new ArgumentException("Simulation time should be int");
+                wasSim = true; simFlag = false;
             }
 
-            Thread.Sleep(updateTime);
+            if (arg is "-c" or "--config_path") confFlag = true;
+            else if (arg is "-t" or "--update_time") updFlag = true;
+            else if (arg is "-s" or "--simulation_time") simFlag = true;
+            else if (arg is "-h" or "--help")
+            {
+                Console.Write(
+                    """
+                    This is lab1 of NSU C# course.
+
+                    *DESCRIPTION*
+                    Dining Philosophers simulation.
+
+                    *ARGUMENTS*
+                    -c or --config_path       Path to config file.
+                    -t or --update_time       State update time (100–200 ms)
+                    -s or --simulation_time   Simulation duration in ms
+                    -h or --help              Show help
+                    """
+                );
+                helpOnly = true;
+            }
         }
-    }
-    catch (OperationCanceledException)
-    {
-        Console.WriteLine("Main loop cancelled.");
-    }
 
-    // Останавливаем философов
-    foreach (var philosopher in philosophers)
-    {
-        philosopher.Stop();
-    }
-
-    Console.WriteLine("\nSimulation completed!");
-}
-
-void PrintFinalStats(double totalSimulationTime)
-{
-    var philosophers = Loader.philosophers;
-    var forks = Loader.forks;
-
-    int allEatingFood = 0;
-    int allHungryTime = 0;
-    double maxHungryTime = 0;
-    string mostHungryPhilosopher = "";
-
-    Console.WriteLine("======== FINAL STATISTICS ========");
-    Console.WriteLine($"Total simulation time: {totalSimulationTime:F2} ms");
-    Console.WriteLine("\nPhilosophers:");
-
-    foreach (var philosopher in philosophers)
-    {
-        philosopher.PrintScore(totalSimulationTime);
-        allEatingFood += philosopher.CountEatingFood;
-        allHungryTime += philosopher.HungryTime;
-
-        if (philosopher.HungryTime > maxHungryTime)
+        if (updateTime is < 100 or > 200)
         {
-            maxHungryTime = philosopher.HungryTime;
-            mostHungryPhilosopher = philosopher.Name;
+            Console.WriteLine("Warning: Update time must be 100–200 ms. Using default 150 ms");
+            updateTime = 150;
         }
-    }
-
-    // Пропускная способность (еда/миллисекунда)
-    double throughput = totalSimulationTime > 0 ? allEatingFood / totalSimulationTime : 0;
-    Console.WriteLine($"\nThroughput: {throughput:F4} meals/ms");
-
-    // Среднее время ожидания
-    double avgWaitingTime = philosophers.Count > 0 ? (double)allHungryTime / philosophers.Count : 0;
-    Console.WriteLine($"Average waiting time: {avgWaitingTime:F2} ms");
-    Console.WriteLine($"Max waiting time: {maxHungryTime:F2} ms ({mostHungryPhilosopher})");
-
-    Console.WriteLine("\nForks utilization:");
-
-    foreach (var fork in forks)
-    {
-        fork.PrintScore(totalSimulationTime);
     }
 }
 
-void ParseArgs(out string pathToConf, out bool helpOnly, out int updateTime, out int simulationTime)
+// Запуск
+class Program
 {
-    pathToConf = "./philosophers.conf";
-    updateTime = 150; // 150 мс по умолчанию
-    simulationTime = 10000; // 10 секунд по умолчанию
-    helpOnly = false;
-
-    bool wasConfigPath = false;
-    bool wasUpdateTime = false;
-    bool wasSimulationTime = false;
-
-    bool confPathFlag = false;
-    bool updTimeFlag = false;
-    bool simulationTimeFlag = false;
-
-    var args = Environment.GetCommandLineArgs();
-
-    foreach (var arg in args)
+    static void Main()
     {
-        if (confPathFlag)
-        {
-            if (wasConfigPath)
-                throw new ArgumentException("Double set path");
-
-            pathToConf = arg;
-            wasConfigPath = true;
-            confPathFlag = false;
-        }
-        else if (updTimeFlag)
-        {
-            if (wasUpdateTime)
-                throw new ArgumentException("Double set update time");
-
-            if (!int.TryParse(arg, out updateTime))
-                throw new ArgumentException("Update time should be int");
-
-            wasUpdateTime = true;
-            updTimeFlag = false;
-        }
-        else if (simulationTimeFlag)
-        {
-            if (wasSimulationTime)
-                throw new ArgumentException("Double set simulation time");
-
-            if (!int.TryParse(arg, out simulationTime))
-                throw new ArgumentException("Simulation time should be int");
-
-            wasSimulationTime = true;
-            simulationTimeFlag = false;
-        }
-
-        if (arg == "-c" || arg == "--config_path")
-            confPathFlag = true;
-        else if (arg == "-t" || arg == "--update_time")
-            updTimeFlag = true;
-        else if (arg == "-s" || arg == "--simulation_time")
-            simulationTimeFlag = true;
-        else if (arg == "-h" || arg == "--help")
-        {
-            Console.Write(
-                """
-                This is lab1 of NSU C# course.
-
-                *DESCRIPTION*
-                In this lab, I solved the Dining Philosophers problem using multiple threads.
-
-                *ARGUMENTS*
-                -c or --config_path - relative or full path to config file. Current directory used by default.
-                -h or --help - see this page
-                -t or --update_time - time between updates of the simulation state output (100-200 ms)
-                -s or --simulation_time - time during which the simulation will run in milliseconds
-                """
-            );
-
-            helpOnly = true;
-        }
-    }
-
-    // Проверяем, что updateTime в диапазоне 100-200 мс
-    if (updateTime < 100 || updateTime > 200)
-    {
-        Console.WriteLine($"Warning: Update time should be between 100-200 ms. Using default: 150 ms");
-        updateTime = 150;
+        new Simulation().Run();
     }
 }
