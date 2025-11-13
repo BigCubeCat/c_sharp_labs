@@ -1,10 +1,12 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Src", "Src\Src.csproj", "{DE0C6BFF-CAAC-4A5B-8049-702101F681D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Core", "Src\Src.csproj", "{DE0C6BFF-CAAC-4A5B-8049-702101F681D3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{A4D9F264-3550-4CB2-A8FD-C9512F643A0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Core", "Lab.Core\Lab.Core.csproj", "{D7BFA44B-2194-4EF7-8CC7-6A0B0094C8B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,5 +25,9 @@ Global
 		{A4D9F264-3550-4CB2-A8FD-C9512F643A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D9F264-3550-4CB2-A8FD-C9512F643A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D9F264-3550-4CB2-A8FD-C9512F643A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BFA44B-2194-4EF7-8CC7-6A0B0094C8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BFA44B-2194-4EF7-8CC7-6A0B0094C8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BFA44B-2194-4EF7-8CC7-6A0B0094C8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BFA44B-2194-4EF7-8CC7-6A0B0094C8B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
