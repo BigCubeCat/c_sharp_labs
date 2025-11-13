@@ -11,9 +11,9 @@ using Src.Strategy;
 
 namespace Src.Philosophers;
 
-public class Platon : PhilosopherService
+public class PhilosopherB : PhilosopherService
 {
-    public Platon(
+    public PhilosopherB(
         ILogger<PhilosopherService> logger,
         IStrategy philosopherStrategy,
         IOptions<PhilosopherConfiguration> options,
@@ -22,6 +22,6 @@ public class Platon : PhilosopherService
         IChannel<PhilosopherToPrinterChannelItem> channelToPrinter)
     : base(logger, philosopherStrategy, options, forksFactory, channelToAnalyzer, channelToPrinter)
     {
-        Name = "Платон";
+        Name = "Маркс";
     }
 }

@@ -9,7 +9,7 @@ namespace Src.Strategy;
 
 public class LeftRightStrategy : ILeftRightStrategy
 {
-    private static Type _leftHandedPhilosopher = typeof(Marks);
+    private static Type _leftHandedPhilosopher = typeof(PhilosopherB);
 
     public void TakeFork(IPhilosopher philosopher)
     {

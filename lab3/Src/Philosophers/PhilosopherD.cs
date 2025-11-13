@@ -11,9 +11,9 @@ using Src.Strategy;
 
 namespace Src.Philosophers;
 
-public class Engels : PhilosopherService
+public class PhilosopherD : PhilosopherService
 {
-    public Engels(
+    public PhilosopherD(
         ILogger<PhilosopherService> logger,
         IStrategy philosopherStrategy,
         IOptions<PhilosopherConfiguration> options,

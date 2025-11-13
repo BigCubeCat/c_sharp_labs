@@ -46,11 +46,11 @@ namespace Src
 
                         services.AddTransient<IForksFactory<Fork>, ForksFactory<Fork>>();
 
-                        services.AddHostedService<Aristotel>();
-                        services.AddHostedService<Engels>();
-                        services.AddHostedService<Kant>();
-                        services.AddHostedService<Marks>();
-                        services.AddHostedService<Platon>();
+                        services.AddHostedService<PhilosopherE>();
+                        services.AddHostedService<PhilosopherD>();
+                        services.AddHostedService<PhilosopherA>();
+                        services.AddHostedService<PhilosopherB>();
+                        services.AddHostedService<PhilosopherC>();
 
                         services.AddHostedService<DeadlockAnalyzer>();
                         services.AddHostedService<SimulationManager>();
