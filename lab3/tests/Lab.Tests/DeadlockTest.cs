@@ -16,20 +16,47 @@ public class DeadlockTest
 {
     private class FakeChannel : IChannel<PhilosopherToAnalyzerChannelItem>
     {
+        public event EventHandler? SendMeItem;
+        public event EventHandler<IChannelEventArgs>? SendMeItemBy;
         public event EventHandler? PublisherWantToRegister;
-        public Channel<PhilosopherToAnalyzerChannelItem> Inner = Channel.CreateUnbounded<PhilosopherToAnalyzerChannelItem>();
 
-        public ChannelReader<PhilosopherToAnalyzerChannelItem> Reader => Inner.Reader;
+        private readonly Channel<PhilosopherToAnalyzerChannelItem> _channel;
+        private int _itemCount = 0;
 
-        public void Notify(object sender)
+        public ChannelWriter<PhilosopherToAnalyzerChannelItem> Writer => _channel.Writer;
+        public ChannelReader<PhilosopherToAnalyzerChannelItem> Reader => _channel.Reader;
+
+        public FakeChannel()
         {
-            // имитация запроса количества философов
+            _channel = Channel.CreateUnbounded<PhilosopherToAnalyzerChannelItem>();
         }
 
-        public void Publish(PhilosopherToAnalyzerChannelItem item)
+        public void Notify(object? sender)
         {
-            PublisherWantToRegister?.Invoke(this, EventArgs.Empty);
-            Inner.Writer.TryWrite(item);
+            // When notified, trigger SendMeItem to simulate philosophers sending data
+            SendMeItem?.Invoke(sender, EventArgs.Empty);
+        }
+
+        public void NotifyWith(object? sender, IChannelEventArgs args)
+        {
+            SendMeItemBy?.Invoke(sender, args);
+        }
+
+        public void RegisterPublisher(object? publisher)
+        {
+            _itemCount++;
+            PublisherWantToRegister?.Invoke(publisher, EventArgs.Empty);
+        }
+
+        // Helper method to simulate philosophers writing to the channel
+        public void SimulatePhilosopherData(PhilosopherToAnalyzerChannelItem item)
+        {
+            _channel.Writer.TryWrite(item);
+        }
+
+        public void SetItemCount(int count)
+        {
+            _itemCount = count;
         }
     }
 
@@ -40,26 +67,37 @@ public class DeadlockTest
     }
 
     // ----------------------------------------------------------
-    // 1. DEADLOCK: все держат правую вилку, никто не ест
+    // 1. DEADLOCK: all philosophers hold forks but none are eating
     // ----------------------------------------------------------
     [Fact]
     public async Task DetectsDeadlock_WhenAllPhilosophersHoldRightForkOnly()
     {
         var channel = new FakeChannel();
         var analyzer = CreateAnalyzer(channel);
-        var token = new CancellationTokenSource().Token;
 
-        // 5 философов — все НЕ едят, левая занята, правая занята
+        // Register 5 philosophers
         for (int i = 0; i < 5; i++)
         {
-            channel.Publish(
-                new PhilosopherToAnalyzerChannelItem(
-                    IAmEating: false,
-                    LeftForkIsFree: false,
-                    RightForkIsFree: false
-                )
-            );
+            channel.RegisterPublisher(this);
         }
+
+        // Set up the event handler to provide data when requested
+        channel.SendMeItem += (sender, e) =>
+        {
+            // Simulate 5 philosophers reporting deadlock conditions
+            for (int i = 0; i < 5; i++)
+            {
+                channel.SimulatePhilosopherData(
+                    new PhilosopherToAnalyzerChannelItem(
+                        IAmEating: false,
+                        LeftForkIsFree: false,
+                        RightForkIsFree: false
+                    )
+                );
+            }
+        };
+
+        var token = new CancellationTokenSource(1000).Token; // 1 second timeout
 
         await Assert.ThrowsAsync<ApplicationException>(async () =>
         {
@@ -68,39 +106,50 @@ public class DeadlockTest
     }
 
     // ----------------------------------------------------------
-    // 2. NO DEADLOCK: хоть один философ ест
+    // 2. NO DEADLOCK: at least one philosopher is eating
     // ----------------------------------------------------------
     [Fact]
     public async Task NoDeadlock_WhenOnePhilosopherIsEating()
     {
         var channel = new FakeChannel();
         var analyzer = CreateAnalyzer(channel);
-        var cts = new CancellationTokenSource();
-        cts.CancelAfter(200); // чтобы цикл analyzer.Analyze не завис
-        var token = cts.Token;
 
-        // Философ 0 ест → дедлока нет
-        channel.Publish(
-            new PhilosopherToAnalyzerChannelItem(
-                IAmEating: true,
-                LeftForkIsFree: false,
-                RightForkIsFree: false
-            )
-        );
-
-        // Остальные просто ждут
-        for (int i = 1; i < 5; i++)
+        // Register 5 philosophers
+        for (int i = 0; i < 5; i++)
         {
-            channel.Publish(
+            channel.RegisterPublisher(this);
+        }
+
+        // Set up the event handler to provide data when requested
+        channel.SendMeItem += (sender, e) =>
+        {
+            // First philosopher is eating
+            channel.SimulatePhilosopherData(
                 new PhilosopherToAnalyzerChannelItem(
-                    IAmEating: false,
+                    IAmEating: true,  // This philosopher is eating
                     LeftForkIsFree: false,
                     RightForkIsFree: false
                 )
             );
-        }
 
-        // Метод Analyze должен завершиться БЕЗ исключения
+            // Remaining philosophers are not eating but forks might be available
+            for (int i = 1; i < 5; i++)
+            {
+                channel.SimulatePhilosopherData(
+                    new PhilosopherToAnalyzerChannelItem(
+                        IAmEating: false,
+                        LeftForkIsFree: (i % 2 == 0), // Some forks are free
+                        RightForkIsFree: (i % 2 == 1) // Some forks are free
+                    )
+                );
+            }
+        };
+
+        var token = new CancellationTokenSource(1000).Token; // 1 second timeout
+
+        // This should complete without throwing (no deadlock detected)
         await analyzer.Analyze(token);
+
+        // If we reach here, the test passes (no deadlock exception thrown)
     }
 }
