@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Interface;
+using Interface.Strategy;
 using Lab.Core.Philosophers;
 
 namespace Lab.Core.Strategy;

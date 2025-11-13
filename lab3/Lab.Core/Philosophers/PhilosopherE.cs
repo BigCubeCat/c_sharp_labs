@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Interface;
+using Interface.Strategy;
 using Interface.Channel;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;

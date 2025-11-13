@@ -7,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Lab.Core.Channels.Items;
 
-namespace Interface;
+namespace Lab.Core;
 
 public class DeadlockAnalyzer : BackgroundService
 {

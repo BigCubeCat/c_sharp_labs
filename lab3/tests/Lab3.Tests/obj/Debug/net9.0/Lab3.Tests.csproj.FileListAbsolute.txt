@@ -1,7 +1,0 @@
-/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/tests/Lab3.Tests/bin/Debug/net9.0/.msCoverageSourceRootsMapping_Lab3.Tests
-/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/tests/Lab3.Tests/obj/Debug/net9.0/Lab3.Tests.csproj.AssemblyReference.cache
-/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/tests/Lab3.Tests/obj/Debug/net9.0/Lab3.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/tests/Lab3.Tests/obj/Debug/net9.0/Lab3.Tests.AssemblyInfoInputs.cache
-/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/tests/Lab3.Tests/obj/Debug/net9.0/Lab3.Tests.AssemblyInfo.cs
-/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/tests/Lab3.Tests/obj/Debug/net9.0/Lab3.Tests.csproj.CoreCompileInputs.cache
-/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/tests/Lab3.Tests/obj/Debug/net9.0/Lab3.Tests.sourcelink.json
