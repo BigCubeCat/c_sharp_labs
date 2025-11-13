@@ -1,0 +1,3357 @@
+
+Welcome to .NET 9.0!
+---------------------
+SDK Version: 9.0.110
+
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate, run 'dotnet dev-certs https --trust'
+Learn about HTTPS: https://aka.ms/dotnet-https
+
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Controller/Philosopher.cs(56,12): warning CS8618: Non-nullable event 'IAmHungryNotify' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable. [/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj]
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Controller/Philosopher.cs(56,12): warning CS8618: Non-nullable event 'IAmFullNotify' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable. [/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj]
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Controller/Philosopher.cs(56,12): warning CS8618: Non-nullable event 'INeedLeftForkNotify' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable. [/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj]
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Controller/Philosopher.cs(56,12): warning CS8618: Non-nullable event 'INeedRightForkNotify' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable. [/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj]
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Controller/Philosopher.cs(56,12): warning CS8618: Non-nullable event 'ICanTakeLeftForkNotify' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable. [/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj]
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Controller/Philosopher.cs(56,12): warning CS8618: Non-nullable event 'ICanTakeRightForkNotify' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable. [/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj]
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Controller/Waiter.cs(40,12): warning CS8618: Non-nullable event 'YouHasRightForkNotify' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable. [/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj]
+/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Controller/Waiter.cs(40,12): warning CS8618: Non-nullable event 'YouHasLeftForkNotify' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable. [/home/bigcubecat/projects/NSU/c_sharp_labs/lab1/Src/Src.csproj]
+======== STEP 0 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 0
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 0
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 0
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 0
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 1 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 0
+Платон: Thinking (Action = None, 1 steps left), eating: 0
+Кант: Thinking (Action = None, 1 steps left), eating: 0
+Маркс: Thinking (Action = None, 1 steps left), eating: 0
+Энгельс: Thinking (Action = None, 1 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 2 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 0
+Платон: Thinking (Action = None, 2 steps left), eating: 0
+Кант: Thinking (Action = None, 2 steps left), eating: 0
+Маркс: Thinking (Action = None, 2 steps left), eating: 0
+Энгельс: Thinking (Action = None, 2 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 3 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 0
+Платон: Thinking (Action = None, 3 steps left), eating: 0
+Кант: Thinking (Action = None, 3 steps left), eating: 0
+Маркс: Thinking (Action = None, 3 steps left), eating: 0
+Энгельс: Thinking (Action = None, 3 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 4 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 0
+Платон: Thinking (Action = None, 4 steps left), eating: 0
+Кант: Thinking (Action = None, 4 steps left), eating: 0
+Маркс: Thinking (Action = None, 4 steps left), eating: 0
+Энгельс: Thinking (Action = None, 4 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 5 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 0
+Платон: Thinking (Action = None, 5 steps left), eating: 0
+Кант: Thinking (Action = None, 5 steps left), eating: 0
+Маркс: Thinking (Action = None, 5 steps left), eating: 0
+Энгельс: Thinking (Action = None, 5 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 6 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 0
+Платон: Thinking (Action = None, 6 steps left), eating: 0
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 0
+Маркс: Thinking (Action = None, 6 steps left), eating: 0
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 7 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 0
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 0
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 0
+Маркс: Thinking (Action = None, 7 steps left), eating: 0
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 8 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 0
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 0
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 0
+Маркс: Thinking (Action = None, 8 steps left), eating: 0
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 9 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 0
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 0
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 0
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 0
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 0
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 10 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 0
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 0
+Кант: Eating (Action = None, 0 steps left), eating: 0
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 0
+Энгельс: Eating (Action = None, 0 steps left), eating: 0
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 11 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 0
+Платон: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 0
+Кант: Eating (Action = None, 1 steps left), eating: 0
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 0
+Энгельс: Eating (Action = None, 1 steps left), eating: 0
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 12 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 0
+Платон: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 0
+Кант: Eating (Action = None, 2 steps left), eating: 0
+Маркс: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 0
+Энгельс: Eating (Action = None, 2 steps left), eating: 0
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 13 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 0
+Платон: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 0
+Кант: Eating (Action = None, 3 steps left), eating: 0
+Маркс: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 0
+Энгельс: Eating (Action = None, 3 steps left), eating: 0
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 14 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 0
+Платон: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 0
+Кант: Eating (Action = None, 4 steps left), eating: 0
+Маркс: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 0
+Энгельс: Eating (Action = None, 4 steps left), eating: 0
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 15 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 0
+Платон: TakeRightFork (Action = TryTakeRightFork, 5 steps left), eating: 0
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 1
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 0
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 1
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 16 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 0
+Платон: Eating (Action = None, 0 steps left), eating: 0
+Кант: Thinking (Action = None, 1 steps left), eating: 1
+Маркс: Eating (Action = None, 0 steps left), eating: 0
+Энгельс: Thinking (Action = None, 1 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 17 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 0
+Платон: Eating (Action = None, 1 steps left), eating: 0
+Кант: Thinking (Action = None, 2 steps left), eating: 1
+Маркс: Eating (Action = None, 1 steps left), eating: 0
+Энгельс: Thinking (Action = None, 2 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 18 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 0
+Платон: Eating (Action = None, 2 steps left), eating: 0
+Кант: Thinking (Action = None, 3 steps left), eating: 1
+Маркс: Eating (Action = None, 2 steps left), eating: 0
+Энгельс: Thinking (Action = None, 3 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 19 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 0
+Платон: Eating (Action = None, 3 steps left), eating: 0
+Кант: Thinking (Action = None, 4 steps left), eating: 1
+Маркс: Eating (Action = None, 3 steps left), eating: 0
+Энгельс: Thinking (Action = None, 4 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 20 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 0
+Платон: Eating (Action = None, 4 steps left), eating: 0
+Кант: Thinking (Action = None, 5 steps left), eating: 1
+Маркс: Eating (Action = None, 4 steps left), eating: 0
+Энгельс: Thinking (Action = None, 5 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 21 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TryTakeRightFork, 5 steps left), eating: 0
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 1
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 1
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 1
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 22 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 0
+Платон: Thinking (Action = None, 1 steps left), eating: 1
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 1
+Маркс: Thinking (Action = None, 1 steps left), eating: 1
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 23 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 0
+Платон: Thinking (Action = None, 2 steps left), eating: 1
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 1
+Маркс: Thinking (Action = None, 2 steps left), eating: 1
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: Available
+======== STEP 24 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 0
+Платон: Thinking (Action = None, 3 steps left), eating: 1
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 1
+Маркс: Thinking (Action = None, 3 steps left), eating: 1
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 25 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 0
+Платон: Thinking (Action = None, 4 steps left), eating: 1
+Кант: Eating (Action = None, 0 steps left), eating: 1
+Маркс: Thinking (Action = None, 4 steps left), eating: 1
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 26 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 0
+Платон: Thinking (Action = None, 5 steps left), eating: 1
+Кант: Eating (Action = None, 1 steps left), eating: 1
+Маркс: Thinking (Action = None, 5 steps left), eating: 1
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 27 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 1
+Платон: Thinking (Action = None, 6 steps left), eating: 1
+Кант: Eating (Action = None, 2 steps left), eating: 1
+Маркс: Thinking (Action = None, 6 steps left), eating: 1
+Энгельс: Eating (Action = None, 0 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 28 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 1
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 1
+Кант: Eating (Action = None, 3 steps left), eating: 1
+Маркс: Thinking (Action = None, 7 steps left), eating: 1
+Энгельс: Eating (Action = None, 1 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 29 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 1
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 1
+Кант: Eating (Action = None, 4 steps left), eating: 1
+Маркс: Thinking (Action = None, 8 steps left), eating: 1
+Энгельс: Eating (Action = None, 2 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 30 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 1
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 1
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 2
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 1
+Энгельс: Eating (Action = None, 3 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 31 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 1
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 1
+Кант: Thinking (Action = None, 1 steps left), eating: 2
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 1
+Энгельс: Eating (Action = None, 4 steps left), eating: 1
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 32 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 1
+Платон: Eating (Action = None, 0 steps left), eating: 1
+Кант: Thinking (Action = None, 2 steps left), eating: 2
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 1
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 2
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: Available
+======== STEP 33 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 1
+Платон: Eating (Action = None, 1 steps left), eating: 1
+Кант: Thinking (Action = None, 3 steps left), eating: 2
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 1
+Энгельс: Thinking (Action = None, 1 steps left), eating: 2
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 34 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 1
+Платон: Eating (Action = None, 2 steps left), eating: 1
+Кант: Thinking (Action = None, 4 steps left), eating: 2
+Маркс: Eating (Action = None, 0 steps left), eating: 1
+Энгельс: Thinking (Action = None, 2 steps left), eating: 2
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 35 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 1
+Платон: Eating (Action = None, 3 steps left), eating: 1
+Кант: Thinking (Action = None, 5 steps left), eating: 2
+Маркс: Eating (Action = None, 1 steps left), eating: 1
+Энгельс: Thinking (Action = None, 3 steps left), eating: 2
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 36 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 1
+Платон: Eating (Action = None, 4 steps left), eating: 1
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 2
+Маркс: Eating (Action = None, 2 steps left), eating: 1
+Энгельс: Thinking (Action = None, 4 steps left), eating: 2
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 37 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 1
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 2
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 2
+Маркс: Eating (Action = None, 3 steps left), eating: 1
+Энгельс: Thinking (Action = None, 5 steps left), eating: 2
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 38 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 1
+Платон: Thinking (Action = None, 1 steps left), eating: 2
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 2
+Маркс: Eating (Action = None, 4 steps left), eating: 1
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 2
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 39 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 1
+Платон: Thinking (Action = None, 2 steps left), eating: 2
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 2
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 2
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 2
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 40 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 1
+Платон: Thinking (Action = None, 3 steps left), eating: 2
+Кант: Eating (Action = None, 0 steps left), eating: 2
+Маркс: Thinking (Action = None, 1 steps left), eating: 2
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 41 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 1
+Платон: Thinking (Action = None, 4 steps left), eating: 2
+Кант: Eating (Action = None, 1 steps left), eating: 2
+Маркс: Thinking (Action = None, 2 steps left), eating: 2
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 42 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 1
+Платон: Thinking (Action = None, 5 steps left), eating: 2
+Кант: Eating (Action = None, 2 steps left), eating: 2
+Маркс: Thinking (Action = None, 3 steps left), eating: 2
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 43 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 1
+Платон: Thinking (Action = None, 6 steps left), eating: 2
+Кант: Eating (Action = None, 3 steps left), eating: 2
+Маркс: Thinking (Action = None, 4 steps left), eating: 2
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 44 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 1
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 2
+Кант: Eating (Action = None, 4 steps left), eating: 2
+Маркс: Thinking (Action = None, 5 steps left), eating: 2
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 45 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 1
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 2
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 3
+Маркс: Thinking (Action = None, 6 steps left), eating: 2
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 46 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 2
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 2
+Кант: Thinking (Action = None, 1 steps left), eating: 3
+Маркс: Thinking (Action = None, 7 steps left), eating: 2
+Энгельс: Eating (Action = None, 0 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 47 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 2
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 2
+Кант: Thinking (Action = None, 2 steps left), eating: 3
+Маркс: Thinking (Action = None, 8 steps left), eating: 2
+Энгельс: Eating (Action = None, 1 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 48 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 2
+Платон: Eating (Action = None, 0 steps left), eating: 2
+Кант: Thinking (Action = None, 3 steps left), eating: 3
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 2
+Энгельс: Eating (Action = None, 2 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 49 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 2
+Платон: Eating (Action = None, 1 steps left), eating: 2
+Кант: Thinking (Action = None, 4 steps left), eating: 3
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 2
+Энгельс: Eating (Action = None, 3 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 50 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 2
+Платон: Eating (Action = None, 2 steps left), eating: 2
+Кант: Thinking (Action = None, 5 steps left), eating: 3
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 2
+Энгельс: Eating (Action = None, 4 steps left), eating: 2
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 51 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 2
+Платон: Eating (Action = None, 3 steps left), eating: 2
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 3
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 2
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 3
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 52 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 2
+Платон: Eating (Action = None, 4 steps left), eating: 2
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 3
+Маркс: Eating (Action = None, 0 steps left), eating: 2
+Энгельс: Thinking (Action = None, 1 steps left), eating: 3
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 53 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 2
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 3
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 3
+Маркс: Eating (Action = None, 1 steps left), eating: 2
+Энгельс: Thinking (Action = None, 2 steps left), eating: 3
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: Available
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 54 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 2
+Платон: Thinking (Action = None, 1 steps left), eating: 3
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 3
+Маркс: Eating (Action = None, 2 steps left), eating: 2
+Энгельс: Thinking (Action = None, 3 steps left), eating: 3
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 55 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 2
+Платон: Thinking (Action = None, 2 steps left), eating: 3
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 3
+Маркс: Eating (Action = None, 3 steps left), eating: 2
+Энгельс: Thinking (Action = None, 4 steps left), eating: 3
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 56 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 2
+Платон: Thinking (Action = None, 3 steps left), eating: 3
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 3
+Маркс: Eating (Action = None, 4 steps left), eating: 2
+Энгельс: Thinking (Action = None, 5 steps left), eating: 3
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 57 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 2
+Платон: Thinking (Action = None, 4 steps left), eating: 3
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 3
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 3
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 3
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 58 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 2
+Платон: Thinking (Action = None, 5 steps left), eating: 3
+Кант: Eating (Action = None, 0 steps left), eating: 3
+Маркс: Thinking (Action = None, 1 steps left), eating: 3
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 3
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 59 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 2
+Платон: Thinking (Action = None, 6 steps left), eating: 3
+Кант: Eating (Action = None, 1 steps left), eating: 3
+Маркс: Thinking (Action = None, 2 steps left), eating: 3
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 60 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 2
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 3
+Кант: Eating (Action = None, 2 steps left), eating: 3
+Маркс: Thinking (Action = None, 3 steps left), eating: 3
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 61 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 2
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 3
+Кант: Eating (Action = None, 3 steps left), eating: 3
+Маркс: Thinking (Action = None, 4 steps left), eating: 3
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 62 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 2
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 3
+Кант: Eating (Action = None, 4 steps left), eating: 3
+Маркс: Thinking (Action = None, 5 steps left), eating: 3
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 63 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 2
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 3
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 4
+Маркс: Thinking (Action = None, 6 steps left), eating: 3
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 64 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 2
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 3
+Кант: Thinking (Action = None, 1 steps left), eating: 4
+Маркс: Thinking (Action = None, 7 steps left), eating: 3
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 65 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 3
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 3
+Кант: Thinking (Action = None, 2 steps left), eating: 4
+Маркс: Thinking (Action = None, 8 steps left), eating: 3
+Энгельс: Eating (Action = None, 0 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 66 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 3
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 3
+Кант: Thinking (Action = None, 3 steps left), eating: 4
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 3
+Энгельс: Eating (Action = None, 1 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 67 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 3
+Платон: Eating (Action = None, 0 steps left), eating: 3
+Кант: Thinking (Action = None, 4 steps left), eating: 4
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 3
+Энгельс: Eating (Action = None, 2 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 68 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 3
+Платон: Eating (Action = None, 1 steps left), eating: 3
+Кант: Thinking (Action = None, 5 steps left), eating: 4
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 3
+Энгельс: Eating (Action = None, 3 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 69 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 3
+Платон: Eating (Action = None, 2 steps left), eating: 3
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 4
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 3
+Энгельс: Eating (Action = None, 4 steps left), eating: 3
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Энгельс)
+======== STEP 70 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 3
+Платон: Eating (Action = None, 3 steps left), eating: 3
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 4
+Маркс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 3
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 4
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 71 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 3
+Платон: Eating (Action = None, 4 steps left), eating: 3
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 4
+Маркс: Eating (Action = None, 0 steps left), eating: 3
+Энгельс: Thinking (Action = None, 1 steps left), eating: 4
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 72 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 3
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 4
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 4
+Маркс: Eating (Action = None, 1 steps left), eating: 3
+Энгельс: Thinking (Action = None, 2 steps left), eating: 4
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 73 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 3
+Платон: Thinking (Action = None, 1 steps left), eating: 4
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 4
+Маркс: Eating (Action = None, 2 steps left), eating: 3
+Энгельс: Thinking (Action = None, 3 steps left), eating: 4
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 74 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 3
+Платон: Thinking (Action = None, 2 steps left), eating: 4
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 4
+Маркс: Eating (Action = None, 3 steps left), eating: 3
+Энгельс: Thinking (Action = None, 4 steps left), eating: 4
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 75 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 3
+Платон: Thinking (Action = None, 3 steps left), eating: 4
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 4
+Маркс: Eating (Action = None, 4 steps left), eating: 3
+Энгельс: Thinking (Action = None, 5 steps left), eating: 4
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 76 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 3
+Платон: Thinking (Action = None, 4 steps left), eating: 4
+Кант: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 4
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 4
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 4
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 77 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 3
+Платон: Thinking (Action = None, 5 steps left), eating: 4
+Кант: Eating (Action = None, 0 steps left), eating: 4
+Маркс: Thinking (Action = None, 1 steps left), eating: 4
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 4
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 78 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 3
+Платон: Thinking (Action = None, 6 steps left), eating: 4
+Кант: Eating (Action = None, 1 steps left), eating: 4
+Маркс: Thinking (Action = None, 2 steps left), eating: 4
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 79 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 3
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 4
+Кант: Eating (Action = None, 2 steps left), eating: 4
+Маркс: Thinking (Action = None, 3 steps left), eating: 4
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 80 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 3
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 4
+Кант: Eating (Action = None, 3 steps left), eating: 4
+Маркс: Thinking (Action = None, 4 steps left), eating: 4
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 81 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 3
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 4
+Кант: Eating (Action = None, 4 steps left), eating: 4
+Маркс: Thinking (Action = None, 5 steps left), eating: 4
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 82 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 3
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 4
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 5
+Маркс: Thinking (Action = None, 6 steps left), eating: 4
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 83 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 3
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 4
+Кант: Thinking (Action = None, 1 steps left), eating: 5
+Маркс: Thinking (Action = None, 7 steps left), eating: 4
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 84 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 4
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 4
+Кант: Thinking (Action = None, 2 steps left), eating: 5
+Маркс: Thinking (Action = None, 8 steps left), eating: 4
+Энгельс: Eating (Action = None, 0 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 85 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 4
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 4
+Кант: Thinking (Action = None, 3 steps left), eating: 5
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 4
+Энгельс: Eating (Action = None, 1 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 86 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 4
+Платон: Eating (Action = None, 0 steps left), eating: 4
+Кант: Thinking (Action = None, 4 steps left), eating: 5
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 4
+Энгельс: Eating (Action = None, 2 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 87 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 4
+Платон: Eating (Action = None, 1 steps left), eating: 4
+Кант: Thinking (Action = None, 5 steps left), eating: 5
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 4
+Энгельс: Eating (Action = None, 3 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 88 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 4
+Платон: Eating (Action = None, 2 steps left), eating: 4
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 5
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 4
+Энгельс: Eating (Action = None, 4 steps left), eating: 4
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Энгельс)
+======== STEP 89 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 4
+Платон: Eating (Action = None, 3 steps left), eating: 4
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 5
+Маркс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 4
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 5
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 90 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 4
+Платон: Eating (Action = None, 4 steps left), eating: 4
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 5
+Маркс: Eating (Action = None, 0 steps left), eating: 4
+Энгельс: Thinking (Action = None, 1 steps left), eating: 5
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 91 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 4
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 5
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 5
+Маркс: Eating (Action = None, 1 steps left), eating: 4
+Энгельс: Thinking (Action = None, 2 steps left), eating: 5
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 92 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 4
+Платон: Thinking (Action = None, 1 steps left), eating: 5
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 5
+Маркс: Eating (Action = None, 2 steps left), eating: 4
+Энгельс: Thinking (Action = None, 3 steps left), eating: 5
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 93 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 4
+Платон: Thinking (Action = None, 2 steps left), eating: 5
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 5
+Маркс: Eating (Action = None, 3 steps left), eating: 4
+Энгельс: Thinking (Action = None, 4 steps left), eating: 5
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 94 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 4
+Платон: Thinking (Action = None, 3 steps left), eating: 5
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 5
+Маркс: Eating (Action = None, 4 steps left), eating: 4
+Энгельс: Thinking (Action = None, 5 steps left), eating: 5
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 95 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 4
+Платон: Thinking (Action = None, 4 steps left), eating: 5
+Кант: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 5
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 5
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 5
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 96 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 4
+Платон: Thinking (Action = None, 5 steps left), eating: 5
+Кант: Eating (Action = None, 0 steps left), eating: 5
+Маркс: Thinking (Action = None, 1 steps left), eating: 5
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 5
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 97 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 4
+Платон: Thinking (Action = None, 6 steps left), eating: 5
+Кант: Eating (Action = None, 1 steps left), eating: 5
+Маркс: Thinking (Action = None, 2 steps left), eating: 5
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 98 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 4
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 5
+Кант: Eating (Action = None, 2 steps left), eating: 5
+Маркс: Thinking (Action = None, 3 steps left), eating: 5
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 99 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 4
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 5
+Кант: Eating (Action = None, 3 steps left), eating: 5
+Маркс: Thinking (Action = None, 4 steps left), eating: 5
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 100 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 4
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 5
+Кант: Eating (Action = None, 4 steps left), eating: 5
+Маркс: Thinking (Action = None, 5 steps left), eating: 5
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 101 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 4
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 5
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 6
+Маркс: Thinking (Action = None, 6 steps left), eating: 5
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 102 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 4
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 5
+Кант: Thinking (Action = None, 1 steps left), eating: 6
+Маркс: Thinking (Action = None, 7 steps left), eating: 5
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 103 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 5
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 5
+Кант: Thinking (Action = None, 2 steps left), eating: 6
+Маркс: Thinking (Action = None, 8 steps left), eating: 5
+Энгельс: Eating (Action = None, 0 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 104 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 5
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 5
+Кант: Thinking (Action = None, 3 steps left), eating: 6
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 5
+Энгельс: Eating (Action = None, 1 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 105 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 5
+Платон: Eating (Action = None, 0 steps left), eating: 5
+Кант: Thinking (Action = None, 4 steps left), eating: 6
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 5
+Энгельс: Eating (Action = None, 2 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 106 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 5
+Платон: Eating (Action = None, 1 steps left), eating: 5
+Кант: Thinking (Action = None, 5 steps left), eating: 6
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 5
+Энгельс: Eating (Action = None, 3 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 107 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 5
+Платон: Eating (Action = None, 2 steps left), eating: 5
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 6
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 5
+Энгельс: Eating (Action = None, 4 steps left), eating: 5
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Энгельс)
+======== STEP 108 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 5
+Платон: Eating (Action = None, 3 steps left), eating: 5
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 6
+Маркс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 5
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 6
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 109 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 5
+Платон: Eating (Action = None, 4 steps left), eating: 5
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 6
+Маркс: Eating (Action = None, 0 steps left), eating: 5
+Энгельс: Thinking (Action = None, 1 steps left), eating: 6
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 110 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 5
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 6
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 6
+Маркс: Eating (Action = None, 1 steps left), eating: 5
+Энгельс: Thinking (Action = None, 2 steps left), eating: 6
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 111 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 5
+Платон: Thinking (Action = None, 1 steps left), eating: 6
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 6
+Маркс: Eating (Action = None, 2 steps left), eating: 5
+Энгельс: Thinking (Action = None, 3 steps left), eating: 6
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 112 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 5
+Платон: Thinking (Action = None, 2 steps left), eating: 6
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 6
+Маркс: Eating (Action = None, 3 steps left), eating: 5
+Энгельс: Thinking (Action = None, 4 steps left), eating: 6
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 113 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 5
+Платон: Thinking (Action = None, 3 steps left), eating: 6
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 6
+Маркс: Eating (Action = None, 4 steps left), eating: 5
+Энгельс: Thinking (Action = None, 5 steps left), eating: 6
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 114 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 5
+Платон: Thinking (Action = None, 4 steps left), eating: 6
+Кант: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 6
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 6
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 6
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 115 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 5
+Платон: Thinking (Action = None, 5 steps left), eating: 6
+Кант: Eating (Action = None, 0 steps left), eating: 6
+Маркс: Thinking (Action = None, 1 steps left), eating: 6
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 6
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 116 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 5
+Платон: Thinking (Action = None, 6 steps left), eating: 6
+Кант: Eating (Action = None, 1 steps left), eating: 6
+Маркс: Thinking (Action = None, 2 steps left), eating: 6
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 117 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 5
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 6
+Кант: Eating (Action = None, 2 steps left), eating: 6
+Маркс: Thinking (Action = None, 3 steps left), eating: 6
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 118 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 5
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 6
+Кант: Eating (Action = None, 3 steps left), eating: 6
+Маркс: Thinking (Action = None, 4 steps left), eating: 6
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 119 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 5
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 6
+Кант: Eating (Action = None, 4 steps left), eating: 6
+Маркс: Thinking (Action = None, 5 steps left), eating: 6
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 120 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 5
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 6
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 7
+Маркс: Thinking (Action = None, 6 steps left), eating: 6
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 121 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 5
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 6
+Кант: Thinking (Action = None, 1 steps left), eating: 7
+Маркс: Thinking (Action = None, 7 steps left), eating: 6
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 122 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 6
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 6
+Кант: Thinking (Action = None, 2 steps left), eating: 7
+Маркс: Thinking (Action = None, 8 steps left), eating: 6
+Энгельс: Eating (Action = None, 0 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 123 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 6
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 6
+Кант: Thinking (Action = None, 3 steps left), eating: 7
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 6
+Энгельс: Eating (Action = None, 1 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 124 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 6
+Платон: Eating (Action = None, 0 steps left), eating: 6
+Кант: Thinking (Action = None, 4 steps left), eating: 7
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 6
+Энгельс: Eating (Action = None, 2 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 125 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 6
+Платон: Eating (Action = None, 1 steps left), eating: 6
+Кант: Thinking (Action = None, 5 steps left), eating: 7
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 6
+Энгельс: Eating (Action = None, 3 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 126 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 6
+Платон: Eating (Action = None, 2 steps left), eating: 6
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 7
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 6
+Энгельс: Eating (Action = None, 4 steps left), eating: 6
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Энгельс)
+======== STEP 127 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 6
+Платон: Eating (Action = None, 3 steps left), eating: 6
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 7
+Маркс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 6
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 7
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 128 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 6
+Платон: Eating (Action = None, 4 steps left), eating: 6
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 7
+Маркс: Eating (Action = None, 0 steps left), eating: 6
+Энгельс: Thinking (Action = None, 1 steps left), eating: 7
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 129 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 6
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 7
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 7
+Маркс: Eating (Action = None, 1 steps left), eating: 6
+Энгельс: Thinking (Action = None, 2 steps left), eating: 7
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 130 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 6
+Платон: Thinking (Action = None, 1 steps left), eating: 7
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 7
+Маркс: Eating (Action = None, 2 steps left), eating: 6
+Энгельс: Thinking (Action = None, 3 steps left), eating: 7
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 131 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 6
+Платон: Thinking (Action = None, 2 steps left), eating: 7
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 7
+Маркс: Eating (Action = None, 3 steps left), eating: 6
+Энгельс: Thinking (Action = None, 4 steps left), eating: 7
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 132 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 6
+Платон: Thinking (Action = None, 3 steps left), eating: 7
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 7
+Маркс: Eating (Action = None, 4 steps left), eating: 6
+Энгельс: Thinking (Action = None, 5 steps left), eating: 7
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 133 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 6
+Платон: Thinking (Action = None, 4 steps left), eating: 7
+Кант: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 7
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 7
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 7
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 134 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 6
+Платон: Thinking (Action = None, 5 steps left), eating: 7
+Кант: Eating (Action = None, 0 steps left), eating: 7
+Маркс: Thinking (Action = None, 1 steps left), eating: 7
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 7
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 135 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 6
+Платон: Thinking (Action = None, 6 steps left), eating: 7
+Кант: Eating (Action = None, 1 steps left), eating: 7
+Маркс: Thinking (Action = None, 2 steps left), eating: 7
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 136 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 6
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 7
+Кант: Eating (Action = None, 2 steps left), eating: 7
+Маркс: Thinking (Action = None, 3 steps left), eating: 7
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 137 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 6
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 7
+Кант: Eating (Action = None, 3 steps left), eating: 7
+Маркс: Thinking (Action = None, 4 steps left), eating: 7
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 138 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 6
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 7
+Кант: Eating (Action = None, 4 steps left), eating: 7
+Маркс: Thinking (Action = None, 5 steps left), eating: 7
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 139 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 6
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 7
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 8
+Маркс: Thinking (Action = None, 6 steps left), eating: 7
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 140 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 6
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 7
+Кант: Thinking (Action = None, 1 steps left), eating: 8
+Маркс: Thinking (Action = None, 7 steps left), eating: 7
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 141 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 7
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 7
+Кант: Thinking (Action = None, 2 steps left), eating: 8
+Маркс: Thinking (Action = None, 8 steps left), eating: 7
+Энгельс: Eating (Action = None, 0 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 142 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 7
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 7
+Кант: Thinking (Action = None, 3 steps left), eating: 8
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 7
+Энгельс: Eating (Action = None, 1 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 143 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 7
+Платон: Eating (Action = None, 0 steps left), eating: 7
+Кант: Thinking (Action = None, 4 steps left), eating: 8
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 7
+Энгельс: Eating (Action = None, 2 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 144 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 7
+Платон: Eating (Action = None, 1 steps left), eating: 7
+Кант: Thinking (Action = None, 5 steps left), eating: 8
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 7
+Энгельс: Eating (Action = None, 3 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 145 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 7
+Платон: Eating (Action = None, 2 steps left), eating: 7
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 8
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 7
+Энгельс: Eating (Action = None, 4 steps left), eating: 7
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Энгельс)
+======== STEP 146 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 7
+Платон: Eating (Action = None, 3 steps left), eating: 7
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 8
+Маркс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 7
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 8
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 147 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 7
+Платон: Eating (Action = None, 4 steps left), eating: 7
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 8
+Маркс: Eating (Action = None, 0 steps left), eating: 7
+Энгельс: Thinking (Action = None, 1 steps left), eating: 8
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 148 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 7
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 8
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 8
+Маркс: Eating (Action = None, 1 steps left), eating: 7
+Энгельс: Thinking (Action = None, 2 steps left), eating: 8
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 149 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 7
+Платон: Thinking (Action = None, 1 steps left), eating: 8
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 8
+Маркс: Eating (Action = None, 2 steps left), eating: 7
+Энгельс: Thinking (Action = None, 3 steps left), eating: 8
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 150 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 7
+Платон: Thinking (Action = None, 2 steps left), eating: 8
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 8
+Маркс: Eating (Action = None, 3 steps left), eating: 7
+Энгельс: Thinking (Action = None, 4 steps left), eating: 8
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 151 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 7
+Платон: Thinking (Action = None, 3 steps left), eating: 8
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 8
+Маркс: Eating (Action = None, 4 steps left), eating: 7
+Энгельс: Thinking (Action = None, 5 steps left), eating: 8
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 152 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 7
+Платон: Thinking (Action = None, 4 steps left), eating: 8
+Кант: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 8
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 8
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 8
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 153 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 7
+Платон: Thinking (Action = None, 5 steps left), eating: 8
+Кант: Eating (Action = None, 0 steps left), eating: 8
+Маркс: Thinking (Action = None, 1 steps left), eating: 8
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 8
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 154 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 7
+Платон: Thinking (Action = None, 6 steps left), eating: 8
+Кант: Eating (Action = None, 1 steps left), eating: 8
+Маркс: Thinking (Action = None, 2 steps left), eating: 8
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 155 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 7
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 8
+Кант: Eating (Action = None, 2 steps left), eating: 8
+Маркс: Thinking (Action = None, 3 steps left), eating: 8
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 156 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 7
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 8
+Кант: Eating (Action = None, 3 steps left), eating: 8
+Маркс: Thinking (Action = None, 4 steps left), eating: 8
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 157 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 7
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 8
+Кант: Eating (Action = None, 4 steps left), eating: 8
+Маркс: Thinking (Action = None, 5 steps left), eating: 8
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 158 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 7
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 8
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 9
+Маркс: Thinking (Action = None, 6 steps left), eating: 8
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 159 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 7
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 8
+Кант: Thinking (Action = None, 1 steps left), eating: 9
+Маркс: Thinking (Action = None, 7 steps left), eating: 8
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 160 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 8
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 8
+Кант: Thinking (Action = None, 2 steps left), eating: 9
+Маркс: Thinking (Action = None, 8 steps left), eating: 8
+Энгельс: Eating (Action = None, 0 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 161 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 8
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 8
+Кант: Thinking (Action = None, 3 steps left), eating: 9
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 8
+Энгельс: Eating (Action = None, 1 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 162 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 8
+Платон: Eating (Action = None, 0 steps left), eating: 8
+Кант: Thinking (Action = None, 4 steps left), eating: 9
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 8
+Энгельс: Eating (Action = None, 2 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 163 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 8
+Платон: Eating (Action = None, 1 steps left), eating: 8
+Кант: Thinking (Action = None, 5 steps left), eating: 9
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 8
+Энгельс: Eating (Action = None, 3 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 164 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 8
+Платон: Eating (Action = None, 2 steps left), eating: 8
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 9
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 8
+Энгельс: Eating (Action = None, 4 steps left), eating: 8
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Энгельс)
+======== STEP 165 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 8
+Платон: Eating (Action = None, 3 steps left), eating: 8
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 9
+Маркс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 8
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 9
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 166 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 8
+Платон: Eating (Action = None, 4 steps left), eating: 8
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 9
+Маркс: Eating (Action = None, 0 steps left), eating: 8
+Энгельс: Thinking (Action = None, 1 steps left), eating: 9
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 167 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 8
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 9
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 9
+Маркс: Eating (Action = None, 1 steps left), eating: 8
+Энгельс: Thinking (Action = None, 2 steps left), eating: 9
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 168 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 8
+Платон: Thinking (Action = None, 1 steps left), eating: 9
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 9
+Маркс: Eating (Action = None, 2 steps left), eating: 8
+Энгельс: Thinking (Action = None, 3 steps left), eating: 9
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 169 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 8
+Платон: Thinking (Action = None, 2 steps left), eating: 9
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 9
+Маркс: Eating (Action = None, 3 steps left), eating: 8
+Энгельс: Thinking (Action = None, 4 steps left), eating: 9
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 170 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 8
+Платон: Thinking (Action = None, 3 steps left), eating: 9
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 9
+Маркс: Eating (Action = None, 4 steps left), eating: 8
+Энгельс: Thinking (Action = None, 5 steps left), eating: 9
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 171 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 8
+Платон: Thinking (Action = None, 4 steps left), eating: 9
+Кант: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 9
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 9
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 9
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 172 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 8
+Платон: Thinking (Action = None, 5 steps left), eating: 9
+Кант: Eating (Action = None, 0 steps left), eating: 9
+Маркс: Thinking (Action = None, 1 steps left), eating: 9
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 9
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 173 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 8
+Платон: Thinking (Action = None, 6 steps left), eating: 9
+Кант: Eating (Action = None, 1 steps left), eating: 9
+Маркс: Thinking (Action = None, 2 steps left), eating: 9
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 174 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 8
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 9
+Кант: Eating (Action = None, 2 steps left), eating: 9
+Маркс: Thinking (Action = None, 3 steps left), eating: 9
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 175 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 8
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 9
+Кант: Eating (Action = None, 3 steps left), eating: 9
+Маркс: Thinking (Action = None, 4 steps left), eating: 9
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 176 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 8
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 9
+Кант: Eating (Action = None, 4 steps left), eating: 9
+Маркс: Thinking (Action = None, 5 steps left), eating: 9
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 177 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 8
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 9
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 10
+Маркс: Thinking (Action = None, 6 steps left), eating: 9
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 178 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 8
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 9
+Кант: Thinking (Action = None, 1 steps left), eating: 10
+Маркс: Thinking (Action = None, 7 steps left), eating: 9
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 179 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 9
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 9
+Кант: Thinking (Action = None, 2 steps left), eating: 10
+Маркс: Thinking (Action = None, 8 steps left), eating: 9
+Энгельс: Eating (Action = None, 0 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 180 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 9
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 9
+Кант: Thinking (Action = None, 3 steps left), eating: 10
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 9
+Энгельс: Eating (Action = None, 1 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 181 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 9
+Платон: Eating (Action = None, 0 steps left), eating: 9
+Кант: Thinking (Action = None, 4 steps left), eating: 10
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 9
+Энгельс: Eating (Action = None, 2 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 182 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 9
+Платон: Eating (Action = None, 1 steps left), eating: 9
+Кант: Thinking (Action = None, 5 steps left), eating: 10
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 9
+Энгельс: Eating (Action = None, 3 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 183 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 9
+Платон: Eating (Action = None, 2 steps left), eating: 9
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 10
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 9
+Энгельс: Eating (Action = None, 4 steps left), eating: 9
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Энгельс)
+======== STEP 184 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 9
+Платон: Eating (Action = None, 3 steps left), eating: 9
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 10
+Маркс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 9
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 10
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 185 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 9
+Платон: Eating (Action = None, 4 steps left), eating: 9
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 10
+Маркс: Eating (Action = None, 0 steps left), eating: 9
+Энгельс: Thinking (Action = None, 1 steps left), eating: 10
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 186 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 9
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 10
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 10
+Маркс: Eating (Action = None, 1 steps left), eating: 9
+Энгельс: Thinking (Action = None, 2 steps left), eating: 10
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 187 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 9
+Платон: Thinking (Action = None, 1 steps left), eating: 10
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 10
+Маркс: Eating (Action = None, 2 steps left), eating: 9
+Энгельс: Thinking (Action = None, 3 steps left), eating: 10
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 188 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 9
+Платон: Thinking (Action = None, 2 steps left), eating: 10
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 10
+Маркс: Eating (Action = None, 3 steps left), eating: 9
+Энгельс: Thinking (Action = None, 4 steps left), eating: 10
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 189 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 9
+Платон: Thinking (Action = None, 3 steps left), eating: 10
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 10
+Маркс: Eating (Action = None, 4 steps left), eating: 9
+Энгельс: Thinking (Action = None, 5 steps left), eating: 10
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 190 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 9
+Платон: Thinking (Action = None, 4 steps left), eating: 10
+Кант: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 10
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 10
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 10
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 191 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 9
+Платон: Thinking (Action = None, 5 steps left), eating: 10
+Кант: Eating (Action = None, 0 steps left), eating: 10
+Маркс: Thinking (Action = None, 1 steps left), eating: 10
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 10
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 192 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 9
+Платон: Thinking (Action = None, 6 steps left), eating: 10
+Кант: Eating (Action = None, 1 steps left), eating: 10
+Маркс: Thinking (Action = None, 2 steps left), eating: 10
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 193 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 9
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 10
+Кант: Eating (Action = None, 2 steps left), eating: 10
+Маркс: Thinking (Action = None, 3 steps left), eating: 10
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 194 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 9
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 10
+Кант: Eating (Action = None, 3 steps left), eating: 10
+Маркс: Thinking (Action = None, 4 steps left), eating: 10
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 195 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 9
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 10
+Кант: Eating (Action = None, 4 steps left), eating: 10
+Маркс: Thinking (Action = None, 5 steps left), eating: 10
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 196 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 9
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 10
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 11
+Маркс: Thinking (Action = None, 6 steps left), eating: 10
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 197 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 9
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 10
+Кант: Thinking (Action = None, 1 steps left), eating: 11
+Маркс: Thinking (Action = None, 7 steps left), eating: 10
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 198 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 10
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 10
+Кант: Thinking (Action = None, 2 steps left), eating: 11
+Маркс: Thinking (Action = None, 8 steps left), eating: 10
+Энгельс: Eating (Action = None, 0 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 199 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 10
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 10
+Кант: Thinking (Action = None, 3 steps left), eating: 11
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 10
+Энгельс: Eating (Action = None, 1 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 200 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 10
+Платон: Eating (Action = None, 0 steps left), eating: 10
+Кант: Thinking (Action = None, 4 steps left), eating: 11
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 10
+Энгельс: Eating (Action = None, 2 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 201 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 10
+Платон: Eating (Action = None, 1 steps left), eating: 10
+Кант: Thinking (Action = None, 5 steps left), eating: 11
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 10
+Энгельс: Eating (Action = None, 3 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 202 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 10
+Платон: Eating (Action = None, 2 steps left), eating: 10
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 11
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 10
+Энгельс: Eating (Action = None, 4 steps left), eating: 10
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Энгельс)
+======== STEP 203 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 10
+Платон: Eating (Action = None, 3 steps left), eating: 10
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 11
+Маркс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 10
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 11
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 204 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 10
+Платон: Eating (Action = None, 4 steps left), eating: 10
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 11
+Маркс: Eating (Action = None, 0 steps left), eating: 10
+Энгельс: Thinking (Action = None, 1 steps left), eating: 11
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 205 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 10
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 11
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 11
+Маркс: Eating (Action = None, 1 steps left), eating: 10
+Энгельс: Thinking (Action = None, 2 steps left), eating: 11
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 206 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 10
+Платон: Thinking (Action = None, 1 steps left), eating: 11
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 11
+Маркс: Eating (Action = None, 2 steps left), eating: 10
+Энгельс: Thinking (Action = None, 3 steps left), eating: 11
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 207 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 10
+Платон: Thinking (Action = None, 2 steps left), eating: 11
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 11
+Маркс: Eating (Action = None, 3 steps left), eating: 10
+Энгельс: Thinking (Action = None, 4 steps left), eating: 11
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 208 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 10
+Платон: Thinking (Action = None, 3 steps left), eating: 11
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 11
+Маркс: Eating (Action = None, 4 steps left), eating: 10
+Энгельс: Thinking (Action = None, 5 steps left), eating: 11
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 209 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 10
+Платон: Thinking (Action = None, 4 steps left), eating: 11
+Кант: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 11
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 11
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 11
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 210 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 10
+Платон: Thinking (Action = None, 5 steps left), eating: 11
+Кант: Eating (Action = None, 0 steps left), eating: 11
+Маркс: Thinking (Action = None, 1 steps left), eating: 11
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 11
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 211 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 10
+Платон: Thinking (Action = None, 6 steps left), eating: 11
+Кант: Eating (Action = None, 1 steps left), eating: 11
+Маркс: Thinking (Action = None, 2 steps left), eating: 11
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 212 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 10
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 11
+Кант: Eating (Action = None, 2 steps left), eating: 11
+Маркс: Thinking (Action = None, 3 steps left), eating: 11
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 213 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 10
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 11
+Кант: Eating (Action = None, 3 steps left), eating: 11
+Маркс: Thinking (Action = None, 4 steps left), eating: 11
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 214 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 10
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 11
+Кант: Eating (Action = None, 4 steps left), eating: 11
+Маркс: Thinking (Action = None, 5 steps left), eating: 11
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 215 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 10
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 11
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 12
+Маркс: Thinking (Action = None, 6 steps left), eating: 11
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 216 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 10
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 11
+Кант: Thinking (Action = None, 1 steps left), eating: 12
+Маркс: Thinking (Action = None, 7 steps left), eating: 11
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 217 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 11
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 11
+Кант: Thinking (Action = None, 2 steps left), eating: 12
+Маркс: Thinking (Action = None, 8 steps left), eating: 11
+Энгельс: Eating (Action = None, 0 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 218 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 11
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 11
+Кант: Thinking (Action = None, 3 steps left), eating: 12
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 11
+Энгельс: Eating (Action = None, 1 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 219 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 2 steps left), eating: 11
+Платон: Eating (Action = None, 0 steps left), eating: 11
+Кант: Thinking (Action = None, 4 steps left), eating: 12
+Маркс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 11
+Энгельс: Eating (Action = None, 2 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 220 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 3 steps left), eating: 11
+Платон: Eating (Action = None, 1 steps left), eating: 11
+Кант: Thinking (Action = None, 5 steps left), eating: 12
+Маркс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 11
+Энгельс: Eating (Action = None, 3 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 221 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 4 steps left), eating: 11
+Платон: Eating (Action = None, 2 steps left), eating: 11
+Кант: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 12
+Маркс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 11
+Энгельс: Eating (Action = None, 4 steps left), eating: 11
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Энгельс)
+======== STEP 222 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 5 steps left), eating: 11
+Платон: Eating (Action = None, 3 steps left), eating: 11
+Кант: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 12
+Маркс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 11
+Энгельс: Thinking (Action = ReleaseForks, 0 steps left), eating: 12
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: Available
+======== STEP 223 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 6 steps left), eating: 11
+Платон: Eating (Action = None, 4 steps left), eating: 11
+Кант: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 12
+Маркс: Eating (Action = None, 0 steps left), eating: 11
+Энгельс: Thinking (Action = None, 1 steps left), eating: 12
+
+Forks:
+Fork-1: Available
+Fork-2: In Use (used by Платон)
+Fork-3: In Use (used by Платон)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 224 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 7 steps left), eating: 11
+Платон: Thinking (Action = ReleaseForks, 0 steps left), eating: 12
+Кант: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 12
+Маркс: Eating (Action = None, 1 steps left), eating: 11
+Энгельс: Thinking (Action = None, 2 steps left), eating: 12
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 225 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 8 steps left), eating: 11
+Платон: Thinking (Action = None, 1 steps left), eating: 12
+Кант: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 12
+Маркс: Eating (Action = None, 2 steps left), eating: 11
+Энгельс: Thinking (Action = None, 3 steps left), eating: 12
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 226 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 9 steps left), eating: 11
+Платон: Thinking (Action = None, 2 steps left), eating: 12
+Кант: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 12
+Маркс: Eating (Action = None, 3 steps left), eating: 11
+Энгельс: Thinking (Action = None, 4 steps left), eating: 12
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 227 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 11
+Платон: Thinking (Action = None, 3 steps left), eating: 12
+Кант: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 12
+Маркс: Eating (Action = None, 4 steps left), eating: 11
+Энгельс: Thinking (Action = None, 5 steps left), eating: 12
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Маркс)
+Fork-5: In Use (used by Маркс)
+======== STEP 228 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 11
+Платон: Thinking (Action = None, 4 steps left), eating: 12
+Кант: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 12
+Маркс: Thinking (Action = ReleaseForks, 0 steps left), eating: 12
+Энгельс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 12
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: Available
+Fork-5: Available
+======== STEP 229 ========
+Philosophers:
+Аристотель: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 11
+Платон: Thinking (Action = None, 5 steps left), eating: 12
+Кант: Eating (Action = None, 0 steps left), eating: 12
+Маркс: Thinking (Action = None, 1 steps left), eating: 12
+Энгельс: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 12
+
+Forks:
+Fork-1: Available
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 230 ========
+Philosophers:
+Аристотель: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 11
+Платон: Thinking (Action = None, 6 steps left), eating: 12
+Кант: Eating (Action = None, 1 steps left), eating: 12
+Маркс: Thinking (Action = None, 2 steps left), eating: 12
+Энгельс: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 12
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: Available
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: Available
+======== STEP 231 ========
+Philosophers:
+Аристотель: Eating (Action = None, 0 steps left), eating: 11
+Платон: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 12
+Кант: Eating (Action = None, 2 steps left), eating: 12
+Маркс: Thinking (Action = None, 3 steps left), eating: 12
+Энгельс: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 12
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 232 ========
+Philosophers:
+Аристотель: Eating (Action = None, 1 steps left), eating: 11
+Платон: Hungry (Action = TryTakeLeftFork, 1 steps left), eating: 12
+Кант: Eating (Action = None, 3 steps left), eating: 12
+Маркс: Thinking (Action = None, 4 steps left), eating: 12
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 1 steps left), eating: 12
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 233 ========
+Philosophers:
+Аристотель: Eating (Action = None, 2 steps left), eating: 11
+Платон: Hungry (Action = TryTakeLeftFork, 2 steps left), eating: 12
+Кант: Eating (Action = None, 4 steps left), eating: 12
+Маркс: Thinking (Action = None, 5 steps left), eating: 12
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 2 steps left), eating: 12
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: In Use (used by Кант)
+Fork-4: In Use (used by Кант)
+Fork-5: In Use (used by Энгельс)
+======== STEP 234 ========
+Philosophers:
+Аристотель: Eating (Action = None, 3 steps left), eating: 11
+Платон: Hungry (Action = TryTakeLeftFork, 3 steps left), eating: 12
+Кант: Thinking (Action = ReleaseForks, 0 steps left), eating: 13
+Маркс: Thinking (Action = None, 6 steps left), eating: 12
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 3 steps left), eating: 12
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 235 ========
+Philosophers:
+Аристотель: Eating (Action = None, 4 steps left), eating: 11
+Платон: Hungry (Action = TryTakeLeftFork, 4 steps left), eating: 12
+Кант: Thinking (Action = None, 1 steps left), eating: 13
+Маркс: Thinking (Action = None, 7 steps left), eating: 12
+Энгельс: TakeRightFork (Action = TryTakeRightFork, 4 steps left), eating: 12
+
+Forks:
+Fork-1: In Use (used by Аристотель)
+Fork-2: In Use (used by Аристотель)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 236 ========
+Philosophers:
+Аристотель: Thinking (Action = ReleaseForks, 0 steps left), eating: 12
+Платон: Hungry (Action = TryTakeLeftFork, 5 steps left), eating: 12
+Кант: Thinking (Action = None, 2 steps left), eating: 13
+Маркс: Thinking (Action = None, 8 steps left), eating: 12
+Энгельс: Eating (Action = None, 0 steps left), eating: 12
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: Available
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
+======== STEP 237 ========
+Philosophers:
+Аристотель: Thinking (Action = None, 1 steps left), eating: 12
+Платон: TakeRightFork (Action = TakeRightFork, 0 steps left), eating: 12
+Кант: Thinking (Action = None, 3 steps left), eating: 13
+Маркс: Hungry (Action = TryTakeRightFork, 0 steps left), eating: 12
+Энгельс: Eating (Action = None, 1 steps left), eating: 12
+
+Forks:
+Fork-1: In Use (used by Энгельс)
+Fork-2: In Use (used by Платон)
+Fork-3: Available
+Fork-4: Available
+Fork-5: In Use (used by Энгельс)
