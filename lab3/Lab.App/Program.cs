@@ -44,11 +44,11 @@ internal class Program
 
                     services.AddTransient<IForksFactory<Fork>, ForksFactory<Fork>>();
 
-                    services.AddHostedService<PhilosopherE>();
-                    services.AddHostedService<PhilosopherD>();
                     services.AddHostedService<PhilosopherA>();
                     services.AddHostedService<PhilosopherB>();
                     services.AddHostedService<PhilosopherC>();
+                    services.AddHostedService<PhilosopherD>();
+                    services.AddHostedService<PhilosopherE>();
 
                     services.AddHostedService<DeadlockAnalyzer>();
                     services.AddHostedService<SimulationManager>();

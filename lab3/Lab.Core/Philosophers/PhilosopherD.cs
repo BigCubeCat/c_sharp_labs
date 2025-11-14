@@ -23,6 +23,6 @@ public class PhilosopherD : PhilosopherService
         IChannel<PhilosopherToPrinterChannelItem> channelToPrinter)
     : base(logger, philosopherStrategy, options, forksFactory, channelToAnalyzer, channelToPrinter)
     {
-        Name = "Энгельс";
+        Name = "D";
     }
 }

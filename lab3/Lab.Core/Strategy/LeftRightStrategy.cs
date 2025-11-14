@@ -10,7 +10,8 @@ namespace Lab.Core.Strategy;
 
 public class LeftRightStrategy : ILeftRightStrategy
 {
-    private static Type _leftHandedPhilosopher = typeof(PhilosopherB);
+    /// делаем одного философа левшой
+    private static Type _leftHandedPhilosopher = typeof(PhilosopherA);
 
     public void TakeFork(IPhilosopher philosopher)
     {

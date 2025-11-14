@@ -56,8 +56,8 @@ public class SimulationManager : BackgroundService, ISimulationManager
         {
             item = await _channel.Reader.ReadAsync(stoppingToken);
             Console.WriteLine(item.PhilosopherInfo);
-            Console.WriteLine(" |- Left Fork: " + item.LeftForkInfo);
-            Console.WriteLine(" |- Right Fork: " + item.RightForkInfo);
+            Console.WriteLine(" > Left Fork: " + item.LeftForkInfo);
+            Console.WriteLine(" > Right Fork: " + item.RightForkInfo);
         }
     }
 
@@ -83,8 +83,8 @@ public class SimulationManager : BackgroundService, ISimulationManager
             {
                 item = await _channel.Reader.ReadAsync(stoppingToken);
                 Console.WriteLine(item.PhilosopherInfo);
-                Console.WriteLine(" |- Left Fork: " + item.LeftForkInfo);
-                Console.WriteLine(" |- Right Fork: " + item.RightForkInfo);
+                Console.WriteLine(" > Left Fork: " + item.LeftForkInfo);
+                Console.WriteLine(" > Right Fork: " + item.RightForkInfo);
             }
 
             _coordinator.CompleteService(GetType().Name);
