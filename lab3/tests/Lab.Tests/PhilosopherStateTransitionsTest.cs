@@ -36,9 +36,9 @@ public class PhilosopherStateTransitionsTest
         var channelToAnalyzerMock = new Mock<IChannel<PhilosopherToAnalyzerChannelItem>>();
         var channelToPrinterMock = new Mock<IChannel<PhilosopherToPrinterChannelItem>>();
 
-        if (typeof(T) == typeof(PhilosopherB)) // Левша
+        if (typeof(T) == typeof(PhilosopherA)) // Левша
         {
-            return new PhilosopherB(
+            return new PhilosopherA(
                 loggerMock.Object,
                 strategy,
                 optionsMock.Object,
@@ -47,9 +47,9 @@ public class PhilosopherStateTransitionsTest
                 channelToPrinterMock.Object
             );
         }
-        else // Правша (по умолчанию PhilosopherA)
+        else
         {
-            return new PhilosopherA(
+            return new PhilosopherB(
                 loggerMock.Object,
                 strategy,
                 optionsMock.Object,
@@ -99,11 +99,11 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = CreateAvailableFork();
         var strategy = new LeftRightStrategy();
 
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
         // Act & Assert
         Assert.NotNull(philosopher.Name);
-        Assert.Equal("Кант", philosopher.Name);
+        Assert.Equal("B", philosopher.Name);
         Assert.NotNull(philosopher.LeftFork);
         Assert.NotNull(philosopher.RightFork);
         Assert.Equal(0, philosopher.CountEatingFood);
@@ -122,7 +122,7 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = CreateAvailableFork();
         var strategy = new LeftRightStrategy();
 
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
         // Act & Assert
         Assert.IsAssignableFrom<IPhilosopher>(philosopher);
@@ -156,9 +156,9 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = new Mock<IFork>();
 
         var config = new PhilosopherConfiguration();
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
-        // Act - For right-handed philosopher (PhilosopherA)
+        // Act - For right-handed philosopher (PhilosopherB)
         strategy.TakeFork(philosopher);
 
         // Assert - Should try to take right fork for right-handed
@@ -175,7 +175,7 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = new Mock<IFork>();
 
         var config = new PhilosopherConfiguration();
-        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
         // Act - For left-handed philosopher (PhilosopherB)
         strategy.TakeFork(philosopher);
@@ -194,9 +194,9 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = new Mock<IFork>();
 
         var config = new PhilosopherConfiguration();
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
-        // Act - For right-handed philosopher (PhilosopherA)
+        // Act - For right-handed philosopher (PhilosopherB)
         strategy.LockFork(philosopher);
 
         // Assert - Should try to lock right fork for right-handed
@@ -213,9 +213,9 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = new Mock<IFork>();
 
         var config = new PhilosopherConfiguration();
-        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
-        // Act - For left-handed philosopher (PhilosopherB)
+        // Act - For left-handed philosopher (PhilosopherA)
         strategy.LockFork(philosopher);
 
         // Assert - Should try to lock left fork for left-handed
@@ -232,7 +232,7 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = new Mock<IFork>();
 
         var config = new PhilosopherConfiguration();
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
         // Setup that philosopher has both forks
         leftForkMock.Setup(f => f.IsTakenBy(philosopher)).Returns(true);
@@ -255,7 +255,7 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = new Mock<IFork>();
 
         var config = new PhilosopherConfiguration();
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
         // Setup that philosopher has locked both forks
         leftForkMock.Setup(f => f.IsLockedBy(philosopher)).Returns(true);
@@ -303,7 +303,7 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = CreateAvailableFork();
         var strategy = new LeftRightStrategy();
 
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
         // Act
         var score = philosopher.GetScoreString(1000.0); // 1000ms simulation time
@@ -324,7 +324,7 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = new Mock<IFork>();
 
         var config = new PhilosopherConfiguration();
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
         leftForkMock.Setup(f => f.IsTakenBy(philosopher)).Returns(true);
 
@@ -341,7 +341,7 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = new Mock<IFork>();
 
         var config = new PhilosopherConfiguration();
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
         rightForkMock.Setup(f => f.IsTakenBy(philosopher)).Returns(true);
 
@@ -358,7 +358,7 @@ public class PhilosopherStateTransitionsTest
         var rightForkMock = new Mock<IFork>();
 
         var config = new PhilosopherConfiguration();
-        var philosopher = CreatePhilosopher<PhilosopherA>(strategy, config, leftForkMock.Object, rightForkMock.Object);
+        var philosopher = CreatePhilosopher<PhilosopherB>(strategy, config, leftForkMock.Object, rightForkMock.Object);
 
         leftForkMock.Setup(f => f.IsLockedBy(philosopher)).Returns(true);
 
