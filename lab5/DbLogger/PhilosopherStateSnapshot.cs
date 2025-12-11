@@ -1,18 +1,23 @@
-using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace DiningPhilosophers.Core.Data
+namespace DbLogger
 {
     public class PhilosopherStateSnapshot
     {
         public int Id { get; set; }
-        public int SimulationRunId { get; set; }
-        public SimulationRun SimulationRun { get; set; } = null!;
+
+        [Required]
         public string PhilosopherName { get; set; } = string.Empty;
+
+        [Required]
         public string State { get; set; } = string.Empty; // Thinking, Hungry, Eating
-        public string LastAction { get; set; } = string.Empty; // None, TakeLeftFork, TakeRightFork, ReleaseLeftFork, ReleaseRightFork
+
+        public double Throughput { get; set; }
+        public double HungryPercentage { get; set; }
         public int MealsEaten { get; set; }
-        public double ElapsedSeconds { get; set; }
-        public DateTime Timestamp { get; set; }
+
+        public int TableStateSnapshotId { get; set; }
+        public TableStateSnapshot? TableStateSnapshot { get; set; }
     }
 }
 
