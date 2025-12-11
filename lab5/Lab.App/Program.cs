@@ -15,6 +15,9 @@ using Lab.Core.Channels;
 using Lab.Core.Channels.Items;
 using Lab.Core.Philosophers;
 using Lab.Core.Strategy;
+using Microsoft.EntityFrameworkCore;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
+using DbLogger.Db; // пространство имён DbLoggerContext
 
 internal class Program
 {
@@ -34,7 +37,6 @@ internal class Program
                 })
                 .ConfigureServices((hostContext, services) =>
                 {
-                    services.AddSingleton<IChannel<PhilosopherToAnalyzerChannelItem>, PhilosopherToAnalyzerChannel>();
                     services.AddSingleton<IChannel<PhilosopherToPrinterChannelItem>, PhilosopherToPrinterChannel>();
                     services.AddSingleton<IStrategy, LeftRightStrategy>();
                     services.AddSingleton<ILogger<PhilosopherService>, Logger<PhilosopherService>>();
@@ -55,9 +57,17 @@ internal class Program
 
                     var root = hostContext.Configuration;
                     services.Configure<PhilosopherConfiguration>(root.GetSection(nameof(PhilosopherConfiguration)));
+                    services.AddDbContext<DbLoggerContext>(options =>
+                        options.UseNpgsql(root.GetConnectionString("DbLogger")));
                 })
                 .Build();
 
+            // миграция
+            using (var scope = host.Services.CreateScope())
+            {
+                var db = scope.ServiceProvider.GetRequiredService<DbLoggerContext>();
+                db.Database.Migrate();
+            }
             await host.RunAsync();
         }
         catch (ApplicationException e)
