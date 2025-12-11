@@ -2,4 +2,4 @@
 dotnet clean
 dotnet restore
 dotnet build
-dotnet test tests/Lab3.Tests/Lab3.Tests.csproj
+dotnet test tests/Lab.Tests/Lab.Tests.csproj

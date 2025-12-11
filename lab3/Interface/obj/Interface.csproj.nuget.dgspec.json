@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/Interface/Interface.csproj": {}
+    "/home/user/Desktop/c_sharp_labs/lab3/Interface/Interface.csproj": {}
   },
   "projects": {
-    "/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/Interface/Interface.csproj": {
+    "/home/user/Desktop/c_sharp_labs/lab3/Interface/Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/Interface/Interface.csproj",
+        "projectUniqueName": "/home/user/Desktop/c_sharp_labs/lab3/Interface/Interface.csproj",
         "projectName": "Interface",
-        "projectPath": "/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/Interface/Interface.csproj",
-        "packagesPath": "/home/bigcubecat/.nuget/packages/",
-        "outputPath": "/home/bigcubecat/projects/NSU/c_sharp_labs/lab3/Interface/obj/",
+        "projectPath": "/home/user/Desktop/c_sharp_labs/lab3/Interface/Interface.csproj",
+        "packagesPath": "/home/user/.nuget/packages/",
+        "outputPath": "/home/user/Desktop/c_sharp_labs/lab3/Interface/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bigcubecat/.nuget/NuGet/NuGet.Config"
+          "/home/user/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.112/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
