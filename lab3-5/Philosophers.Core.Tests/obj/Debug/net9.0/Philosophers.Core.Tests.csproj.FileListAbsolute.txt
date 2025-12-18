@@ -615,12 +615,12 @@
 /home/user/Desktop/C#_Projects1/C#_Projects/lab3-5/Philosophers.Core.Tests/obj/Debug/net9.0/ref/Philosophers.Core.Tests.dll
 /home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/.msCoverageSourceRootsMapping_Philosophers.Core.Tests
 /home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping_Philosophers.Core.Tests
-/home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/xunit.runner.visualstudio.testadapter.dll
-/home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/xunit.runner.reporters.netcoreapp10.dll
-/home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/xunit.runner.utility.netcoreapp10.dll
 /home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/Philosophers.Core.deps.json
 /home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/Philosophers.Core.runtimeconfig.json
 /home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/Philosophers.Core
+/home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/xunit.runner.visualstudio.testadapter.dll
+/home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/xunit.runner.reporters.netcoreapp10.dll
+/home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/xunit.runner.utility.netcoreapp10.dll
 /home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/Philosophers.Core.Tests.deps.json
 /home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/Philosophers.Core.Tests.runtimeconfig.json
 /home/user/Desktop/c_sharp_labs/lab3-5/Philosophers.Core.Tests/bin/Debug/net9.0/Philosophers.Core.Tests.dll

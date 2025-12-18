@@ -11,9 +11,9 @@ using Philosophers.Services.Channels.Items;
 
 namespace Philosophers.Core.HostedServices.Philosophers;
 
-public class Kant : PhilosopherService
+public class D : PhilosopherService
 {
-    public Kant(
+    public D(
         ILogger<PhilosopherService> logger,
         IStrategy philosopherStrategy,
         IOptions<PhilosopherConfiguration> options,
@@ -22,6 +22,6 @@ public class Kant : PhilosopherService
         IChannel<PhilosopherToPrinterChannelItem> channelToPrinter)
     : base(logger, philosopherStrategy, options, forksFactory, channelToAnalyzer, channelToPrinter)
     {
-        Name = "Кант";
+        Name = "D";
     }
 }

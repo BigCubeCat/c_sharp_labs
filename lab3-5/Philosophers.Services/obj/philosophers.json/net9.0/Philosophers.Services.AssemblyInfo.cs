@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Philosophers.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("philosophers.json")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b89485f4151d709fedb0549f67e300d654ca41b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2c1f102af959cebe498756c1b42304b8d3759a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Philosophers.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Philosophers.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

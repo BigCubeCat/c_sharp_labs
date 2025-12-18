@@ -50,11 +50,11 @@ try
 
             services.AddTransient<IForksFactory<Fork>, ForksFactory<Fork>>();
 
-            services.AddHostedService<Aristotel>();
-            services.AddHostedService<Engels>();
-            services.AddHostedService<Kant>();
-            services.AddHostedService<Marks>();
-            services.AddHostedService<Platon>();
+            services.AddHostedService<A>();
+            services.AddHostedService<B>();
+            services.AddHostedService<C>();
+            services.AddHostedService<D>();
+            services.AddHostedService<E>();
 
             services.AddHostedService<DeadlockAnalyzer>();
             services.AddHostedService<SimulationManager>();

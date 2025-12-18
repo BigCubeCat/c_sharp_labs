@@ -10,3 +10,15 @@
 /home/user/Desktop/C#_Projects1/C#_Projects/lab3-5/Interface/obj/philosophers.json/net9.0/refint/Interface.dll
 /home/user/Desktop/C#_Projects1/C#_Projects/lab3-5/Interface/obj/philosophers.json/net9.0/Interface.pdb
 /home/user/Desktop/C#_Projects1/C#_Projects/lab3-5/Interface/obj/philosophers.json/net9.0/ref/Interface.dll
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/bin/philosophers.json/net9.0/Interface.deps.json
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/bin/philosophers.json/net9.0/Interface.dll
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/bin/philosophers.json/net9.0/Interface.pdb
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/obj/philosophers.json/net9.0/Interface.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/obj/philosophers.json/net9.0/Interface.AssemblyInfoInputs.cache
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/obj/philosophers.json/net9.0/Interface.AssemblyInfo.cs
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/obj/philosophers.json/net9.0/Interface.csproj.CoreCompileInputs.cache
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/obj/philosophers.json/net9.0/Interface.sourcelink.json
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/obj/philosophers.json/net9.0/Interface.dll
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/obj/philosophers.json/net9.0/refint/Interface.dll
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/obj/philosophers.json/net9.0/Interface.pdb
+/home/user/Desktop/c_sharp_labs/lab3-5/Interface/obj/philosophers.json/net9.0/ref/Interface.dll
