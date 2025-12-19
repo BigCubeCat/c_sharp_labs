@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bq7GA1zpX/0=",
+  "success": true,
+  "projectFilePath": "/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/Interface.csproj",
+  "expectedPackageFiles": [
+    "/home/grigoriy/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.0/microsoft.aspnetcore.app.ref.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

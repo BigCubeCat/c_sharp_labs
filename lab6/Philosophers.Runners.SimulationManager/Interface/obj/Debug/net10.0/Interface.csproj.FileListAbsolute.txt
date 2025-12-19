@@ -1,0 +1,16 @@
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/bin/Debug/net10.0/Interface.deps.json
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/bin/Debug/net10.0/Interface.dll
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/bin/Debug/net10.0/Interface.pdb
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/bin/Debug/net10.0/DataContracts.dll
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/bin/Debug/net10.0/DataContracts.pdb
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/Interface.csproj.AssemblyReference.cache
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/Interface.GeneratedMSBuildEditorConfig.editorconfig
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/Interface.AssemblyInfoInputs.cache
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/Interface.AssemblyInfo.cs
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/Interface.csproj.CoreCompileInputs.cache
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/Interface.sourcelink.json
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/Interface.csproj.Up2Date
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/Interface.dll
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/refint/Interface.dll
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/Interface.pdb
+/home/grigoriy/Projects/C#_Projects/lab6/Philosophers.Runners.SimulationManager/Interface/obj/Debug/net10.0/ref/Interface.dll

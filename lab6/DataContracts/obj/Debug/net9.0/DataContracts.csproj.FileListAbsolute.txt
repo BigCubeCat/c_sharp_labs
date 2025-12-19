@@ -1,0 +1,12 @@
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/bin/Debug/net9.0/DataContracts.deps.json
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/bin/Debug/net9.0/DataContracts.dll
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/bin/Debug/net9.0/DataContracts.pdb
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/obj/Debug/net9.0/DataContracts.GeneratedMSBuildEditorConfig.editorconfig
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/obj/Debug/net9.0/DataContracts.AssemblyInfoInputs.cache
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/obj/Debug/net9.0/DataContracts.AssemblyInfo.cs
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/obj/Debug/net9.0/DataContracts.csproj.CoreCompileInputs.cache
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/obj/Debug/net9.0/DataContracts.sourcelink.json
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/obj/Debug/net9.0/DataContracts.dll
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/obj/Debug/net9.0/refint/DataContracts.dll
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/obj/Debug/net9.0/DataContracts.pdb
+/home/grigoriy/Projects/C#_Projects/lab6/DataContracts/obj/Debug/net9.0/ref/DataContracts.dll
