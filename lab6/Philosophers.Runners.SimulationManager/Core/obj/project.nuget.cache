@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "CKeyE7cJqgQ=",
+  "success": true,
+  "projectFilePath": "/home/user/Desktop/c_sharp_labs/lab6/Philosophers.Runners.SimulationManager/Core/Core.csproj",
+  "expectedPackageFiles": [
+    "/home/user/.nuget/packages/microsoft.extensions.http/10.0.0/microsoft.extensions.http.10.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.Extensions.Http will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "/home/user/Desktop/c_sharp_labs/lab6/Philosophers.Runners.SimulationManager/Core/Core.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/user/Desktop/c_sharp_labs/lab6/Philosophers.Runners.SimulationManager/Core/Core.csproj",
+      "libraryId": "Microsoft.Extensions.Http",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

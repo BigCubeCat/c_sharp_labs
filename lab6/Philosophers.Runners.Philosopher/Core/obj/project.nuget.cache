@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pvKIZcEcreE=",
+  "success": true,
+  "projectFilePath": "/home/user/Desktop/c_sharp_labs/lab6/Philosophers.Runners.Philosopher/Core/Core.csproj",
+  "expectedPackageFiles": [
+    "/home/user/.nuget/packages/microsoft.openapi/1.6.25/microsoft.openapi.1.6.25.nupkg.sha512",
+    "/home/user/.nuget/packages/swashbuckle.aspnetcore.swagger/9.0.4/swashbuckle.aspnetcore.swagger.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
