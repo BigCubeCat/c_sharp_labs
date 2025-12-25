@@ -1,7 +1,7 @@
 ﻿version: '3.8'
 
 services:
-  # 1. Table Service
+  # Table Service
   table-service:
     build:
       context: .
@@ -14,11 +14,60 @@ services:
       - TABLE_SERVICE_URL=http://table-service:8080
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
+      interval: 15s
       timeout: 10s
       retries: 3
 
-  # 2. 1 Платон
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+      SIMULATION_MINUTES: ${RABBITMQ_LIFETIME_MINUTES:-6}
+    command: >
+      sh -c "
+        echo 'Starting RabbitMQ';
+        rabbitmq-server &
+        sleep $((SIMULATION_MINUTES * 60));
+        echo 'Simulation time elapsed, stopping RabbitMQ';
+        rabbitmqctl stop
+      "
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+
+    # Coordinator Service
+  coordinator-service:
+    build:
+      context: .
+      dockerfile: CoordinatorService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - PHILOSOPHER_COUNT=5
+      - RabbitMQ__Host=rabbitmq
+    depends_on:
+      table-service:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - "8090:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+  # 1 Платон
   philosopher-plato:
     build:
       context: .
@@ -29,16 +78,21 @@ services:
       - LEFT_FORK_ID=1
       - RIGHT_FORK_ID=5
       - TABLE_SERVICE_URL=http://table-service:8080
-      - SIMULATION_DURATION_MINUTES=5
+      - SIMULATION_DURATION_MINUTES=${SIMULATION_DURATION_MINUTES}
       - PHILOSOPHER_STRATEGY=polite
+      - RabbitMQ__Host=rabbitmq
 
     depends_on:
       table-service:
         condition: service_healthy
+      coordinator-service:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
     # ports:
     #   - "8081:8081"
 
-  # 3. 2 Аристотель
+  # 2 Аристотель
   philosopher-aristotle:
     build:
       context: .
@@ -49,15 +103,20 @@ services:
       - LEFT_FORK_ID=2
       - RIGHT_FORK_ID=1
       - TABLE_SERVICE_URL=http://table-service:8080
-      - SIMULATION_DURATION_MINUTES=5
+      - SIMULATION_DURATION_MINUTES=${SIMULATION_DURATION_MINUTES}
       - PHILOSOPHER_STRATEGY=polite
+      - RabbitMQ__Host=rabbitmq
     depends_on:
       table-service:
+        condition: service_healthy
+      coordinator-service:
+        condition: service_healthy
+      rabbitmq:
         condition: service_healthy
     # ports:
     #   - "8082:8081"
 
-  # 4. 3 Сократ
+  # 3 Сократ
   philosopher-socrates:
     build:
       context: .
@@ -68,15 +127,20 @@ services:
       - LEFT_FORK_ID=3
       - RIGHT_FORK_ID=2
       - TABLE_SERVICE_URL=http://table-service:8080
-      - SIMULATION_DURATION_MINUTES=5
+      - SIMULATION_DURATION_MINUTES=${SIMULATION_DURATION_MINUTES}
       - PHILOSOPHER_STRATEGY=polite
+      - RabbitMQ__Host=rabbitmq
     depends_on:
       table-service:
+        condition: service_healthy
+      coordinator-service:
+        condition: service_healthy
+      rabbitmq:
         condition: service_healthy
     # ports:
     #   - "8083:8081"
 
-  # 5. 4 Декарт
+  # 4 Декарт
   philosopher-descartes:
     build:
       context: .
@@ -87,15 +151,20 @@ services:
       - LEFT_FORK_ID=4
       - RIGHT_FORK_ID=3
       - TABLE_SERVICE_URL=http://table-service:8080
-      - SIMULATION_DURATION_MINUTES=5
+      - SIMULATION_DURATION_MINUTES=${SIMULATION_DURATION_MINUTES}
       - PHILOSOPHER_STRATEGY=polite
+      - RabbitMQ__Host=rabbitmq
     depends_on:
       table-service:
+        condition: service_healthy
+      coordinator-service:
+        condition: service_healthy
+      rabbitmq:
         condition: service_healthy
     # ports:
     #   - "8084:8081"
 
-  # 6. 5 Кант
+  # 5 Кант
   philosopher-kant:
     build:
       context: .
@@ -106,10 +175,15 @@ services:
       - LEFT_FORK_ID=5
       - RIGHT_FORK_ID=4
       - TABLE_SERVICE_URL=http://table-service:8080
-      - SIMULATION_DURATION_MINUTES=5
+      - SIMULATION_DURATION_MINUTES=${SIMULATION_DURATION_MINUTES}
       - PHILOSOPHER_STRATEGY=polite
+      - RabbitMQ__Host=rabbitmq
     depends_on:
       table-service:
+        condition: service_healthy
+      coordinator-service:
+        condition: service_healthy
+      rabbitmq:
         condition: service_healthy
     # ports:
     #   - "8085:8081"
