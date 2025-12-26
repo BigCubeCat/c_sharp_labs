@@ -16,14 +16,14 @@ services:
       timeout: 2s
       retries: 3
 
-  philosopher-plato:
+  philosopher-a:
     build:
       dockerfile: ./Philosophers.Runners.Philosopher/Dockerfile
       context: .
     environment:
       - ASPNETCORE_URLS=http://+:8080
       - HOST_URI=http://manager-service:8080/SimulationManager/
-      - PhilosopherConfiguration__Name="Plato"
+      - PhilosopherConfiguration__Name="A"
       - ServicesConfiguration__IsLeftHanded=true
     depends_on:
       manager-service:
@@ -31,14 +31,14 @@ services:
     ports:
       - 8081:8080
   
-  philosopher-marks:
+  philosopher-b:
     build:
       dockerfile: ./Philosophers.Runners.Philosopher/Dockerfile
       context: .
     environment:
       - ASPNETCORE_URLS=http://+:8080
       - HOST_URI=http://manager-service:8080/SimulationManager/
-      - PhilosopherConfiguration__Name="Marks"
+      - PhilosopherConfiguration__Name="B"
       - ServicesConfiguration__IsLeftHanded=false
     depends_on:
       manager-service:
@@ -46,14 +46,14 @@ services:
     ports:
       - 8082:8080
   
-  philosopher-engels:
+  philosopher-c:
     build:
       dockerfile: ./Philosophers.Runners.Philosopher/Dockerfile
       context: .
     environment:
       - ASPNETCORE_URLS=http://+:8080
       - HOST_URI=http://manager-service:8080/SimulationManager/
-      - PhilosopherConfiguration__Name="Engels"
+      - PhilosopherConfiguration__Name="C"
       - ServicesConfiguration__IsLeftHanded=false
     depends_on:
       manager-service:
@@ -61,14 +61,14 @@ services:
     ports:
       - 8083:8080
   
-  philosopher-socrates:
+  philosopher-d:
     build:
       dockerfile: ./Philosophers.Runners.Philosopher/Dockerfile
       context: .
     environment:
       - ASPNETCORE_URLS=http://+:8080
       - HOST_URI=http://manager-service:8080/SimulationManager/
-      - PhilosopherConfiguration__Name="Socrates"
+      - PhilosopherConfiguration__Name="D"
       - ServicesConfiguration__IsLeftHanded=false
     depends_on:
       manager-service:
@@ -76,14 +76,14 @@ services:
     ports:
       - 8084:8080
   
-  philosopher-aristotel:
+  philosopher-e:
     build:
       dockerfile: ./Philosophers.Runners.Philosopher/Dockerfile
       context: .
     environment:
       - ASPNETCORE_URLS=http://+:8080
       - HOST_URI=http://manager-service:8080/SimulationManager/
-      - PhilosopherConfiguration__Name="Aristotel"
+      - PhilosopherConfiguration__Name="E"
       - ServicesConfiguration__IsLeftHanded=false
     depends_on:
       manager-service:
