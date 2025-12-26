@@ -176,76 +176,7 @@ namespace PhilosopherService.Services
             await _tableClient.UnregisterAsync(request, ct);
         }
 
-        //private async Task PerformCycleAsync(CancellationToken cancellationToken)
-        //{
-        //    switch (_state)
-        //    {
-        //        case PhilosopherState.Thinking:
-        //            await ThinkAsync(cancellationToken);
-        //            _thinkingTimer.Stop();
-
-        //            _state = PhilosopherState.Hungry;
-        //            _hungryTimer.Restart();
-        //            _action = "TakeLeftFork|TakeRightFork";
-
-        //            await UpdateStateInTableAsync();
-        //            _logger.LogDebug("Философ {Name} проголодался", _config.Name);
-        //            break;
-
-        //        case PhilosopherState.Hungry:
-        //            // подготовим TCS до публикации (чтобы не пропустить быстрый ответ)
-        //            _allowedToEatTcs = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
-
-        //            // отправляем событие координатору
-        //            await _bus.Publish(new PhilosopherWantsToEat { PhilosopherId = _config.PhilosopherId });
-        //            _logger.LogDebug("Философ {Name} отправил WantsToEat", _config.Name);
-
-        //            // ждём разрешения или отмены
-        //            try
-        //            {
-        //                await _allowedToEatTcs.Task.WaitAsync(cancellationToken);
-        //            }
-        //            catch (OperationCanceledException)
-        //            {
-        //                _logger.LogDebug("Ожидание разрешения прервано для {Name}", _config.Name);
-        //                return;
-        //            }
-
-
-
-        //            await _strategy.AcquireForksAsync(
-        //            _config,
-        //            _tableClient,
-        //            cancellationToken);
-        //            _hungryTimer.Stop();
-
-        //            _state = PhilosopherState.Eating;
-        //            _action = "Eating";
-        //            _eatingTimer.Restart();
-        //            _eatCount++;
-
-        //            await UpdateStateInTableAsync();
-        //            _logger.LogDebug("Философ {Name} начинает есть", _config.Name);
-
-        //            await EatAsync(cancellationToken);
-        //            _eatingTimer.Stop();
-
-        //            await _strategy.ReleaseForksAsync(_config, _tableClient);
-        //            // сообщаем координатору что поели
-        //            await _bus.Publish(new PhilosopherFinishedEating { PhilosopherId = _config.PhilosopherId });
-
-        //            _state = PhilosopherState.Thinking;
-        //            _action = "ReleaseLeftFork|ReleaseRightFork";
-        //            _thinkingTimer.Restart();
-
-        //            await UpdateStateInTableAsync();
-        //            _logger.LogDebug("Философ {Name} закончил есть. Всего: {Count}",
-        //                _config.Name, _eatCount);
-
-        //            break;
-        //    }
-        //}
-
+       
         private async Task PerformCycleAsync(CancellationToken cancellationToken)
         {
             switch (_state)

@@ -23,13 +23,6 @@ namespace Philosophers.Shared.Events
         public string PhilosopherId { get; init; } = "";
     }
 
-    //public record PhilosopherAllowedToTakeFork
-    //{
-    //    public string PhilosopherId;
-    //    public int ForkId;
-    //}
-
-
     public record PhilosopherFinishedEating
     {
         public string PhilosopherId { get; init; } = "";
